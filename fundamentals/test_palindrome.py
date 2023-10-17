@@ -7,5 +7,4 @@ def test_is_palindrome():
 
     assert not is_palindrome('robot')
     assert not is_palindrome('cookies')
-    
-    # TODO - add more test cases ... 
+    # TODO - add more test cases ...
