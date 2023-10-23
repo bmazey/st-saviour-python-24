@@ -9,4 +9,21 @@ def is_palindrome(word: str) -> bool:
     :rtype: str
     """
     # TODO - implement our is_palindrome function ...
-    return True
+
+    reversed = ""
+   # i = 0
+    #while i < len(word):
+    for character in word:
+        reversed = character + reversed
+    return reversed == word
+
+
+    #word = 'apple'
+
+   # for character in word:
+    #    print (character)
+
+    #i = 0
+    #while i < len(word):
+    #    print ('value of i: ' + str(i) + 'character: ' + word[i])
+    #    i += 1

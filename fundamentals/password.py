@@ -1,3 +1,5 @@
+import random
+
 def generate_password() -> str:
     """
     generate_password takes no arguments and produces a string
@@ -9,4 +11,25 @@ def generate_password() -> str:
         - it's relatively uncommon to generate the same password twice 
     """
     # TODO - implement generate_password ...
-    return ''
+    password = ''
+
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+    mickey = '!@#$%^&*'
+
+    # do this five times ...
+    for i in range(5):
+        a = random.randint(0, 25)
+        # print('random number: ' + str(a) + " random letter: " + alphabet[a])
+        password += alphabet[a]
+    
+    for i in range(4):
+        n = random.randint(0, 9)
+        password += str(n)
+     
+    c = random.randint(0, 7)
+    password += mickey[c]
+
+    return password
+        
+ 
