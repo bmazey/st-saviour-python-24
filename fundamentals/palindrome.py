@@ -9,4 +9,11 @@ def is_palindrome(word: str) -> bool:
     :rtype: str
     """
     # TODO - implement our is_palindrome function ...
+    reversed = ''
+    for character in word:
+        reversed = character + reversed
+
+    # how do we compare two strings in python?
+    # which two strings should we compare?
+    
     return True

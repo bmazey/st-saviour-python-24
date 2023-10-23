@@ -1,3 +1,5 @@
+import random
+
 def generate_password() -> str:
     """
     generate_password takes no arguments and produces a string
@@ -9,4 +11,14 @@ def generate_password() -> str:
         - it's relatively uncommon to generate the same password twice 
     """
     # TODO - implement generate_password ...
+    r = random.randint(0, 25)
+
+    print('random number: ' + str(r))
+
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    print('random letter: ' + alphabet[r])
+
+    r = random.randint(0, 25)
+    print('new random number: ' + str(r))
+
     return ''
