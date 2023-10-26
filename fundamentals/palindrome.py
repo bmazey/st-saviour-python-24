@@ -9,4 +9,8 @@ def is_palindrome(word: str) -> bool:
     :rtype: str
     """
     # TODO - implement our is_palindrome function ...
-    return True
+
+    reversed = ""
+    for character in word:
+        reversed = character + reversed
+    return reversed == word
