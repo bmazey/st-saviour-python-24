@@ -10,7 +10,7 @@ def is_palindrome(word: str) -> bool:
     """
     # TODO - implement our is_palindrome function ...
 
-    reversed = " " 
+    reversed = ''
     for character in word: 
         reversed = character + reversed 
     return reversed == word

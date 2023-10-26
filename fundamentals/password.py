@@ -12,15 +12,15 @@ def generate_password() -> str:
     """
     # TODO - implement generate_password ...
 
-    generate_password = ''
+    password = ''
     alphabet= 'abcdefghijklmnopqrstuvwxyz'
     symbol = '!@#$%^&*' 
     # random_character = alphabet[n]
     #len (password) ==10
 
     for i in range (5):
-        random.character(0,25)
-        password += alphabet [n]
+        n = random.randint(0,25)
+        password += alphabet[n]
     
 
     for i in range (4):
