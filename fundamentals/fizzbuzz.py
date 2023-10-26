@@ -18,3 +18,5 @@ def fizzbuzz(number: int) -> str:
     if number % 5 == 0:
         result += "buzz"
     return result
+# were telling the comp. that if the number % 3 it will then add fizz to the result
+# if the number % 5 it will add buzz to the result

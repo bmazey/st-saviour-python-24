@@ -16,7 +16,8 @@ def is_palindrome(word: str) -> bool:
     for character in word:
         reversed = character + reversed
     return reversed == word
-
+# were telling the comp. to take the word,reverse the letters and 
+# if this word is the same as the original print the bolean answers
 
     #word = 'apple'
 

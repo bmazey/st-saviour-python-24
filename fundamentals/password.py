@@ -20,14 +20,16 @@ def generate_password() -> str:
     # do this five times ...
     for i in range(5):
         a = random.randint(0, 25)
-        # print('random number: ' + str(a) + " random letter: " + alphabet[a])
+        # were telling the comp. to take random letters from the alphabet and print it after each other 5 times
         password += alphabet[a]
     
     for i in range(4):
         n = random.randint(0, 9)
+        # were telling the comp. to take random numbers and print them 4 times after each other
         password += str(n)
      
     c = random.randint(0, 7)
+    # were telling the comp. to choose a random character from the list and print it once after the numbers
     password += mickey[c]
 
     return password
