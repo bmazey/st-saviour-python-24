@@ -1,3 +1,6 @@
+
+import random
+from xml.dom.pulldom import CHARACTERS
 def generate_password() -> str:
     """
     generate_password takes no arguments and produces a string
@@ -9,4 +12,19 @@ def generate_password() -> str:
         - it's relatively uncommon to generate the same password twice 
     """
     # TODO - implement generate_password ...
-    return ''
+    
+    result = ''
+    for i in range(5):
+        l = random.randint(0, 25)
+        alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        result += alphabet[l]
+
+    for i in range(4):
+        r = random.randint (0,9)
+        result += str(r)
+    
+    character = '!@#$%^&*'
+    c = random.randint(0,8)
+    result += character[c]
+
+    return result   
