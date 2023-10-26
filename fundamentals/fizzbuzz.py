@@ -11,5 +11,16 @@ def fizzbuzz(number: int) -> str:
     :returns: a string with some combination of 'fizz' and 'buzz' 
     :rtype: str
     """
-    # TODO implement our fizzbuzz function ...
-    return ''
+    # TODO implement our fizzbuzz function ...    result = ""
+    result = ''
+    # assigning a string to a condition
+
+    if (number % 3 == 0):
+        result +='fizz'
+    
+    if (number % 5 == 0):
+        result +='buzz'
+        
+    return result
+    
+    
