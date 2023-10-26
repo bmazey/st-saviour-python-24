@@ -13,6 +13,11 @@ def fizzbuzz(number: int) -> str:
     """
     # TODO implement our fizzbuzz function ...
 
+ #if a number (int) can be divided into a number without remainder (% modulo) it outputs a result (empty str)
+ # if % of 3 --> fizz 
+ # if % of 5 --> buzz
+ #result is either fizz, buzz, or fizzbuz
+
     result = ''
     if number % 3 == 0:
         result += "fizz"

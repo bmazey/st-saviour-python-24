@@ -12,6 +12,14 @@ def generate_password() -> str:
         - it's relatively uncommon to generate the same password twice 
     """
     # TODO - implement generate_password ...
+    #this is insane 
+    #i = integer 
+    #for statments --> loop 
+    #for every integer in a range of 5, produce 5 letters from 0,25 (the alphabet). 
+    #for every integer in a range of 4, produce 4 numbers from 0 to 9 
+    # final case produces a random character of the 7 given     
+    #returns all cases in one password 
+
     
     result = ''
     for i in range(5):
@@ -24,7 +32,7 @@ def generate_password() -> str:
         result += str(r)
     
     character = '!@#$%^&*'
-    c = random.randint(0,8)
+    c = random.randint(0,7)
     result += character[c]
 
     return result   

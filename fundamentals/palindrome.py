@@ -9,7 +9,10 @@ def is_palindrome(word: str) -> bool:
     :rtype: str
     """
     # TODO - implement our is_palindrome function ...
-    
+    #reversed is variable for empty str
+    #for every character in a word (str bool), take that character and reverse it 
+    #code produces a bool if the returned reversed word is a palindrome or not
+
     reversed = ""
     for character in word:
         reversed = character + reversed 
