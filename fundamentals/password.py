@@ -10,25 +10,25 @@ def generate_password() -> str:
         - the final character is a symbol [!@#$%^&*]
         - it's relatively uncommon to generate the same password twice 
     """
-    # TODO - implement generate_password ...
-
+    # start with a blank string to add the reverse of password
     password = ''
+    # defining the password character complexity requirements
     alphabet= 'abcdefghijklmnopqrstuvwxyz'
     symbol = '!@#$%^&*' 
     # random_character = alphabet[n]
     #len (password) ==10
-
+    # setting the range of alphabet
     for i in range (5):
         n = random.randint(0,25)
         password += alphabet[n]
     
-
+    # setting the range of the string
     for i in range (4):
         n = random.randint(0, 9)
         password += str(n)
-    
+    # setting the range of the symbols
     s = random.randint(0,7)
     password += symbol[s]
-
+    # returning the result of password
     return password
 

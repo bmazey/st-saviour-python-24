@@ -11,12 +11,16 @@ def fizzbuzz(number: int) -> str:
     :returns: a string with some combination of 'fizz' and 'buzz' 
     :rtype: str
     """
-    # TODO implement our fizzbuzz function ...
+
+    # start with a blank string to add the reverse of the number
     result = '' 
+    # checking if it's a multiple of three
     if number % 3 == 0:
         result += 'fizz'
+    # checking if it's a multiple of five
     if number % 5 == 0:
         result += 'buzz'
+    # returning the result of the number
     return result
       
 
