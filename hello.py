@@ -32,6 +32,9 @@ if __name__ == '__main__':
     print('type of c: ' + str(type(c)))
     print('type of d: ' + str(type(d)))
 
+    # unicode character support
+    print('lie for you, die for you, paint the sky for you \U0001F304')
+
     # plot of Office Space (1999)
     # https://en.wikipedia.org/wiki/Pentium_FDIV_bug
 
