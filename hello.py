@@ -21,22 +21,48 @@ if __name__ == '__main__':
     print(float(int(a / b)))
 
     # booleans
-    if True == 1:
-        print('here!')
+    # if True == 1:
+        # print('here!')
 
-    if False == 0:
-        print('also here!')
+    # if False == 0:
+        # print('also here!')
 
-    c = 2
-    d = 2.5
-    print('type of c: ' + str(type(c)))
-    print('type of d: ' + str(type(d)))
+    # c = 2
+    # d = 2.5
+    # print('type of c: ' + str(type(c)))
+    # print('type of d: ' + str(type(d)))
 
     # unicode character support
-    print('lie for you, die for you, paint the sky for you \U0001F304')
+    # print('lie for you, die for you, paint the sky for you \U0001F304')
 
     # plot of Office Space (1999)
     # https://en.wikipedia.org/wiki/Pentium_FDIV_bug
 
+    # define x
+    # x = [1, 2, 3]
 
+    # set y equal to x
+    # y = x
 
+    # copy everything from x over to z
+    # z = x[:]
+
+    # test equality (is) for x and y
+    # if x is y:
+    #     print('x (is) equal to y')
+    # else:
+    #     print('x (is) NOT equal to y')
+
+    # test equality (is) for x and z
+    # if x is z:
+    #     print('x (is) equal to z')
+    # else:
+    #     print('x (is) NOT equal to z')
+
+    # test equality (==) for x and z
+    # if x == z:
+    #     print('x is equal (==) to z')
+    # else:
+    #     print('x is NOT equal (==) to z')
+
+    
