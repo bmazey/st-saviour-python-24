@@ -1,5 +1,4 @@
 import random
-import symbol
 
 
 def generate_password() -> str:
