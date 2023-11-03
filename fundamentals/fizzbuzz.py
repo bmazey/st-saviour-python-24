@@ -24,4 +24,3 @@ def fizzbuzz(number: int) -> str:
         result += 'buzz'
 
     return result
-

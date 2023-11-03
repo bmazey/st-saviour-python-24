@@ -29,5 +29,3 @@ def generate_password() -> str:
         z = random.randint(0,7)
         password += symbol [z]
     return password
-
-        

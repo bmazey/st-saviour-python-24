@@ -13,5 +13,3 @@ def is_palindrome(word: str) -> bool:
     for character in word:
         reversed = character + reversed
     return reversed == word
-
-   
