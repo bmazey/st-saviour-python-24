@@ -8,5 +8,5 @@ def is_palindrome(word: str) -> bool:
     :returns: True or False depending on palindrome status
     :rtype: str
     """
-    # TODO - implement our is_palindrome function ...
-    return True
+    # check if word is equal to reverse (using slicing)
+    return word == word[::-1]

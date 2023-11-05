@@ -1,3 +1,5 @@
+import random
+
 def generate_password() -> str:
     """
     generate_password takes no arguments and produces a string
@@ -8,5 +10,21 @@ def generate_password() -> str:
         - the final character is a symbol [!@#$%^&*]
         - it's relatively uncommon to generate the same password twice 
     """
-    # TODO - implement generate_password ...
-    return ''
+    password = ''
+
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    digits = '0123456789'
+    symbols = '!@#$%^&*'
+
+    # add 5 random letters
+    for i in range(5):
+        password += alphabet[random.randint(0, len(alphabet) - 1)]
+
+    # add 4 random digits
+    for i in range(4):
+        password += digits[random.randint(0, len(digits) - 1)]
+
+    # add a random symbol
+    password += symbols[random.randint(0, len(symbols) - 1)]
+
+    return password
