@@ -1,4 +1,4 @@
-"""lists in python"""
+"""lists in python: https://docs.python.org/3/tutorial/datastructures.html"""
 def evens_only(numbers: []) -> []:
     """
     evens_only() accepts a list of integers called "numbers" and returns a
