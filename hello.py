@@ -22,10 +22,10 @@ if __name__ == '__main__':
 
     # booleans
     # if True == 1:
-        # print('here!')
+    #     print('here!')
 
     # if False == 0:
-        # print('also here!')
+    #     print('also here!')
 
     # c = 2
     # d = 2.5
@@ -39,30 +39,30 @@ if __name__ == '__main__':
     # https://en.wikipedia.org/wiki/Pentium_FDIV_bug
 
     # define x
-    # x = [1, 2, 3]
+    x = [1, 2, 3]
 
     # set y equal to x
-    # y = x
+    y = x
 
     # copy everything from x over to z
-    # z = x[:]
+    z = x[:]
 
     # test equality (is) for x and y
-    # if x is y:
-    #     print('x (is) equal to y')
-    # else:
-    #     print('x (is) NOT equal to y')
+    if x is y:
+        print('x (is) equal to y')
+    else:
+        print('x (is) NOT equal to y')
 
     # test equality (is) for x and z
-    # if x is z:
-    #     print('x (is) equal to z')
-    # else:
-    #     print('x (is) NOT equal to z')
+    if x is z:
+        print('x (is) equal to z')
+    else:
+        print('x (is) NOT equal to z')
 
     # test equality (==) for x and z
-    # if x == z:
-    #     print('x is equal (==) to z')
-    # else:
-    #     print('x is NOT equal (==) to z')
+    if x == z:
+        print('x is equal (==) to z')
+    else:
+        print('x is NOT equal (==) to z')
 
     
