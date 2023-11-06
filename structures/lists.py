@@ -6,7 +6,7 @@ def evens_only(numbers: []) -> []:
     list, preserving the initial order.
     for example [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
     :param numbers: the original list of integers
-    :type number: []
+    :type numbers: []
     :returns: a new list of only even integers 
     :rtype: []
     """
@@ -20,7 +20,7 @@ def last_of_four_digits(numbers: []) -> []:
     original numbers, preserving the initial order.
     for example [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
     :param numbers: the original list of four digit integers
-    :type number: []
+    :type numbers: []
     :returns: a new list of last digits only
     :rtype: []
     """
@@ -33,7 +33,7 @@ def round_up(numbers: []) -> []:
     as a general rule, we only round up when the decimal is >= 5.
     for example [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
     :param numbers: the original list of doubles
-    :type number: []
+    :type numbers: []
     :returns: a new list of rounded integers
     :rtype: []
     """
@@ -47,7 +47,7 @@ def find_negative(numbers: []) -> int:
     should return -1.
     for example: [0, 4, -2, 17] -> 2
     :param numbers: the original list of integers
-    :type number: []
+    :type numbers: []
     :returns: the position of the first negative integer or -1 if no such integer exists
     :rtype: int
     """
