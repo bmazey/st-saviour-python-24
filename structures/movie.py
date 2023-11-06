@@ -22,7 +22,7 @@ class Movie:
 
     def dequeue(self) -> str:
         """
-        removes a patron from the patrons list, returns the patron name
+        removes a patron from the patrons list, returns the patron name.
         dequeue() should return an empty string instead of an error if
         someone tries to dequeue from an empty patrons list
         """
