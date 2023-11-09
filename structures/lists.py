@@ -32,8 +32,13 @@ def last_of_four_digits(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement last_of_four_digits()
-
-    return []
+    i = 0
+    four = []
+    while i < len(numbers):
+        annoy = numbers[i] % 10
+        four.append(annoy)
+        i += 1
+    return four
 
 def round_up(numbers: []) -> []:
     """
@@ -47,11 +52,17 @@ def round_up(numbers: []) -> []:
     """
     # TODO implement round_up()
     i = 0 
+    boop = []
     while i < len(numbers):
-        if numbers[i]
-
+        decimal = numbers[i] % 1
+        if decimal >= .5:
+            decimal = int(numbers[i]) + 1
+        else:
+            decimal = int(numbers[i])
+        boop.append(decimal)
         i += 1
-    return []
+
+    return boop
 
 def find_negative(numbers: []) -> int:
     """
