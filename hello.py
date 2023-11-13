@@ -5,7 +5,7 @@ if __name__ == '__main__':
     # discussion on errors
     # python is a dynamically typed language - what does that mean?
     # python has no 'primitive types' - why?
-
+    
     # https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
     a = 5
     b = 2
@@ -64,3 +64,5 @@ if __name__ == '__main__':
         print('x is equal (==) to z')
     else:
         print('x is NOT equal (==) to z')
+        
+

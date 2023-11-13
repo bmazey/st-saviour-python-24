@@ -11,7 +11,15 @@ def evens_only(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement evens_only()
-    return []
+    i = 0 
+    evens = []
+    while i < len(numbers):
+        if numbers[i] % 2 == 0:
+            evens.append(numbers[i])
+        i += 1
+    return evens
+
+
 
 def last_of_four_digits(numbers: []) -> []:
     """
@@ -25,7 +33,13 @@ def last_of_four_digits(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement last_of_four_digits()
-    return []
+    i = 0
+    bean = []
+    while  i < len(numbers):
+        bag = numbers[i] % 10
+        bean.append(bag)
+        i += 1
+    return bean
 
 def round_up(numbers: []) -> []:
     """
@@ -38,7 +52,17 @@ def round_up(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement round_up()
-    return []
+    i = 0 
+    beeb = []
+    while i < len(numbers):
+        beebo = numbers[i] % 1
+        if beebo >= 0.5:
+            beebo = int(numbers[i]) + 1
+        else:
+            beebo = int(numbers[i])
+        beeb.append(beebo)
+    i += 1
+    return beeb
 
 def find_negative(numbers: []) -> int:
     """
@@ -52,4 +76,9 @@ def find_negative(numbers: []) -> int:
     :rtype: int
     """
     # TODO implement find_negative()
+    i = 0 
+    while i < len(numbers):
+        if numbers [i] < 0:
+            return i
+        i += 1
     return -1
