@@ -19,7 +19,7 @@ def evens_only(numbers: []) -> []:
         i += 1
     return evens
 
-
+#if the numbers in the list "evens" are even(divisible by 2, %2), add the even number to the end of the list
 
 def last_of_four_digits(numbers: []) -> []:
     """
@@ -37,9 +37,13 @@ def last_of_four_digits(numbers: []) -> []:
     bean = []
     while  i < len(numbers):
         bag = numbers[i] % 10
+        #modulo 10 results in the last digit of the 4 digit number 
         bean.append(bag)
+        #add the last digit( % 10) to the end of the list
         i += 1
     return bean
+#return the list 
+
 
 def round_up(numbers: []) -> []:
     """
@@ -61,7 +65,7 @@ def round_up(numbers: []) -> []:
         else:
             beebo = int(numbers[i])
         beeb.append(beebo)
-    i += 1
+        i += 1
     return beeb
 
 def find_negative(numbers: []) -> int:
