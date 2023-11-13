@@ -18,6 +18,9 @@ class Movie:
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
         # TODO implement enqueue()
+        self.patrons = []
+        patrons = ''
+        self.patrons.append(patrons)
         return None
 
     def dequeue(self) -> str:
