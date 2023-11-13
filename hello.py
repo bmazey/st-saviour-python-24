@@ -1,4 +1,4 @@
-if __name__ == '__main__':
+from structuresif __name__ == '__main__':
     # this file is provided for experimentation purposes
     # print('new dawn, new day')
 
@@ -7,9 +7,9 @@ if __name__ == '__main__':
     # python has no 'primitive types' - why?
 
     # https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
-    a = 5
-    b = 2
-    print(a / b)
+    # a = 5
+    # b = 2
+    # print(a / b)
 
     # floored quotient (aka: integer division)
     print(a // b)
@@ -64,3 +64,7 @@ if __name__ == '__main__':
         print('x is equal (==) to z')
     else:
         print('x is NOT equal (==) to z')
+
+numbers = [-1, 5, 6, 7, 8]
+result= find_negative(numbers)
+print('result: ' + str(result))

@@ -1,4 +1,4 @@
-"""lists in python: https://docs.python.org/3/tutorial/datastructures.html"""
+"""lists in python: 88"""
 def evens_only(numbers: []) -> []:
     """
     evens_only() accepts a list of integers called "numbers" and returns a
@@ -11,7 +11,13 @@ def evens_only(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement evens_only()
-    return []
+    i = 0
+    evens = []
+    while i < len(numbers):
+        if numbers[i] % 2 == 0:
+            evens.append(numbers[i])
+        i += 1
+    return evens
 
 def last_of_four_digits(numbers: []) -> []:
     """
@@ -25,7 +31,13 @@ def last_of_four_digits(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement last_of_four_digits()
-    return []
+    i = 0
+    leap = []
+    while i < len(numbers):
+        bag = numbers [i] % 10
+        leap.append(bag)
+        i += 1
+    return leap
 
 def round_up(numbers: []) -> []:
     """
@@ -38,7 +50,18 @@ def round_up(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement round_up()
-    return []
+    i = 0
+    boba = []
+    while i < len(numbers):
+        bobao = numbers[i] % 1
+        if bobao >= 0.5:
+            bobao = int(numbers[i]) + 1
+        else:
+            bobao = int(numbers[i])
+        boba.append(bobao)
+    i+= 1
+    return boba
+
 
 def find_negative(numbers: []) -> int:
     """
@@ -51,5 +74,17 @@ def find_negative(numbers: []) -> int:
     :returns: the position of the first negative integer or -1 if no such integer exists
     :rtype: int
     """
-    # TODO implement find_negative()
+    
+    i = 0
+    while i < len(numbers): 
+       #print('i value: ' + str(i) + ' number value: ' + str(numbers[i]))
+       if numbers[i] < 0:
+          return i
+       i += 1
+      
     return -1
+
+# bonus
+# create a method "every other" which accepts an array(list)
+# of ints ans returns a new array returning only the original numbers of even positions.
+
