@@ -11,6 +11,13 @@ class Movie:
     you'll have to learn about the use of "self" in order to complete the Movie
     implementation.
     """
+
+    # class  vs instance 
+    #class is ideal 
+    #instance is reality 
+
+    #queue is first in first out
+
     def __init__(self):
         # notice the use of 'self' here
         self.patrons = []
@@ -19,8 +26,7 @@ class Movie:
         """adds a patron to the patrons list, returns None"""
         # TODO implement enqueue()
         self.patrons = []
-        
-       
+        self.patrons.append(patron)
         return None
         
 
@@ -31,12 +37,16 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
+        self = ''
+        self.patrons = []
+        self.patrons.pop(0)
         return ''
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
         return ''
+    
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
