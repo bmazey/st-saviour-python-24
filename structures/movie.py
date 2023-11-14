@@ -14,13 +14,13 @@ class Movie:
     def __init__(self):
         # notice the use of 'self' here
         self.patrons = []
+        
 
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
         # TODO implement enqueue()
-        self.patrons = []
-        patrons = ''
-        self.patrons.append(patrons)
+        self.patrons.append(patron)
+
         return None
 
     def dequeue(self) -> str:
@@ -30,19 +30,29 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
-        return ''
+        #if self.is_empty():
+        patron = self.patrons[0]
+        if self.is_empty():
+            return ''
+        else:
+            return patron
+        
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
-        return ''
+        
+        return self.patrons
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
-        return ''
+        i = len(self.patrons) + 1
+        patron = self.patrons(i)
+        return patron
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
         # TODO implement is_empty()
-        return True
+        if self.patrons == []:
+            return True
