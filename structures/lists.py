@@ -90,4 +90,16 @@ def find_negative(numbers: []) -> int:
     
     return -1
     
-def every_other(numbers)  
+def every_other(numbers: []) -> []:
+    """
+    every_other() accepts a list of integers and returns a new list containing 
+    only the original numbers with even positions
+    """
+    # TODO implement every_other()
+    i = 0
+    for i in numbers:
+        while i < len(numbers):
+            if i % 2 == 0:
+                     i += 1
+            return numbers[i]
+    
