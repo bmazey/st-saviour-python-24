@@ -31,25 +31,31 @@ class Movie:
         """
         # TODO implement dequeue()
         #if self.is_empty():
-        patron = self.patrons[0]
+        
         if self.is_empty():
             return ''
         else:
+            patron = self.patrons[0]
+            self.patrons.pop(0)
             return patron
+            
+        
+            
         
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
         
-        return self.patrons
+        return self.patrons[0]
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
-        i = len(self.patrons) + 1
-        patron = self.patrons(i)
-        return patron
+        #i = len(self.patrons) 
+        #patron = self.patrons[i]
+        last = self.patrons[-1]
+        return last
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
