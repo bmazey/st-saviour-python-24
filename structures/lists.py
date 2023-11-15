@@ -33,14 +33,13 @@ def last_of_four_digits(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement last_of_four_digits()
-    return []
-remainder = []
-i = 0
-while i < len(last_of_four_digits): 
-    if last_of_four_digits % 10 == [1,2,3,4,5,6,7,8,9]:
-        remainder.append(numbers[i])
+
+    remainder = []
+    i = 0
+    while i < len(numbers): 
+        remainder.append(numbers[i] % 10) 
         i += 1
-return remainder
+    return remainder
 
 def round_up(numbers: []) -> []:
     """
