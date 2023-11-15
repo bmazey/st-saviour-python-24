@@ -11,6 +11,7 @@ def evens_only(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement evens_only()
+
     return []
 
 def last_of_four_digits(numbers: []) -> []:
@@ -38,6 +39,10 @@ def round_up(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement round_up()
+
+    def round_up(n, decimals=0):
+        multiplier = 10**decimals
+        return math.ceil(n * multiplier) / multiplier
     return []
 
 def find_negative(numbers: []) -> int:
@@ -52,4 +57,10 @@ def find_negative(numbers: []) -> int:
     :rtype: int
     """
     # TODO implement find_negative()
-    return -1
+    i = 0   
+    while i <  len(numbers):
+        if numbers[i]< 0:
+            return i
+        
+    
+
