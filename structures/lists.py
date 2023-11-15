@@ -90,4 +90,4 @@ def find_negative(numbers: []) -> int:
     
     return -1
     
-       
+def every_other(numbers)  

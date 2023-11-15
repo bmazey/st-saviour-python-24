@@ -19,6 +19,7 @@ class Freighter:
     def push(self, container: str) -> None:
         """adds a new container to the stack containers and returns None"""
         # TODO implement push()
+        self.containers.append(container)
         return None
 
     def pop(self) -> str:
@@ -28,19 +29,27 @@ class Freighter:
         of an error
         """
         # TODO implement pop()
-        return ''
+        if self.is_empty():
+            return ''
+        else:
+            container = self.containers[-1]
+            self.containers.pop(-1)
+            return container
 
     def top(self) -> str:
         """reads and returns the name of the container on top of the stack"""
         # TODO implement top()
-        return ''
+        top = str(self.containers[-1])
+        return top
 
     def bottom(self) -> str:
         """reads and returns the name of the container on the bottom of the stack"""
         # TODO implement bottom()
-        return ''
+        bottom = str(self.containers[0])
+        return bottom
 
     def is_empty(self) -> bool:
         """returns True if containers is empty, and False otherwise"""
         # TODO implement is_empty()
-        return True
+        if self.containers == []:
+            return True
