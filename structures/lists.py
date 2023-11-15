@@ -61,6 +61,3 @@ def find_negative(numbers: []) -> int:
     while i <  len(numbers):
         if numbers[i]< 0:
             return i
-        
-    
-
