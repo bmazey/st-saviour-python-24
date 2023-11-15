@@ -37,14 +37,13 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
-        self = ''
-        self.patrons = []
-        self.patrons.pop(0)
-        return ''
+
+
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
+        first = ''
         return ''
     
 
@@ -56,4 +55,6 @@ class Movie:
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
         # TODO implement is_empty()
-        return True
+        if self.patrons == []:
+            return True
+
