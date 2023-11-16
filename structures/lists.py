@@ -96,14 +96,11 @@ def every_other(numbers: []) -> []:
     only the original numbers with even positions
     """
     # TODO implement every_other()
-    i = 0
+    
     evens = []
-    for i in numbers:
-        # while i < len(numbers):
-        #     i += 1 
-            if i % 2 == 0:
-                evens.append(numbers[i])
-                return evens
+    teehee = numbers[::2]
+    evens.append(teehee)
+    return evens
         
             
     
