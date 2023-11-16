@@ -51,16 +51,16 @@ def round_up(numbers: []) -> []:
     """
     # TODO implement round_up()
     i = 0
-    boba = []
+    star = []
     while i < len(numbers):
-        bobao = numbers[i] % 1
-        if bobao >= 0.5:
-            bobao = int(numbers[i]) + 1
+        lunar = numbers[i] % 1
+        if lunar >= 0.5:
+            lunar = int(numbers[i]) + 1
         else:
-            bobao = int(numbers[i])
-        boba.append(bobao)
+            lunar = int(numbers[i])
+        star.append(lunar)
         i += 1
-    return boba
+    return star
 
 def find_negative(numbers: []) -> int:
     """
