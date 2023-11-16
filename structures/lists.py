@@ -97,9 +97,13 @@ def every_other(numbers: []) -> []:
     """
     # TODO implement every_other()
     i = 0
+    evens = []
     for i in numbers:
-        while i < len(numbers):
+        # while i < len(numbers):
+        #     i += 1 
             if i % 2 == 0:
-                     i += 1
-            return numbers[i]
+                evens.append(numbers[i])
+                return evens
+        
+            
     

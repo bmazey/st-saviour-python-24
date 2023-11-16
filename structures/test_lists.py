@@ -79,5 +79,7 @@ def test_every_other():
     test = [1, 2, 3, 4, 5, 6]
     result = every_other(test)
 
-    assert result[0] == 10
-    assert result[1] == 17
+    assert result[0] == 1
+    assert result[1] == 3
+    assert result[1] == 5
+    
