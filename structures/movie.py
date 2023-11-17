@@ -48,19 +48,19 @@ class Movie:
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
-        #return first element of the list
+        #returnthe element at index 0 in list
         return self.patrons[0]
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
-        #return last element of the list
+        #return element at index -1 in list
         last = self.patrons[-1]
         return last
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
         # TODO implement is_empty()
-        #establish that an empty string will is assigned to true in a boolean
+        #establish that an empty string will is assigned to the true value of a boolean
         if self.patrons == []:
             return True
