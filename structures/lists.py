@@ -12,12 +12,17 @@ def evens_only(numbers: []) -> []:
     """
     # TODO implement evens_only()
     i = 0
+     # make an empty list (this was annoying hense the name stupid) to have things added to the end
     stupid = []
+     # While the length of our given numbers are greater than 0, take the first term and test if it modulo 2 equals 0
     while i < len(numbers):
         if numbers[i] % 2 == 0:
+            # if the number modulo 2 equals 0 add it to our list
             stupid.append(numbers[i])
+        # move onto the next term in the list
         i += 1
         
+        # print the numbers that pass the test in a list
     return stupid
 
 def last_of_four_digits(numbers: []) -> []:
@@ -33,11 +38,15 @@ def last_of_four_digits(numbers: []) -> []:
     """
     # TODO implement last_of_four_digits()
     i = 0
+    # make an empty list
     four = []
+    # While the length of our given numbers are greater than 0, modulo all the numbers in the list by 10 to get the last digit, then ass it to the list
     while i < len(numbers):
         annoy = numbers[i] % 10
         four.append(annoy)
+        # test the next object in the list
         i += 1
+        # return the newly created list
     return four
 
 def round_up(numbers: []) -> []:
@@ -52,7 +61,9 @@ def round_up(numbers: []) -> []:
     """
     # TODO implement round_up()
     i = 0 
+    # make an empty list
     boop = []
+    # While the length of our given numbers are greater than 0, modulo all the numbers in the list by 1, if you get a number less than .5 drop the decimal and return the  number, if you get a number greater than or equal to .5 then you drop the decimal point and add 1 to the number
     while i < len(numbers):
         decimal = numbers[i] % 1
         if decimal >= .5:
@@ -60,8 +71,9 @@ def round_up(numbers: []) -> []:
         else:
             decimal = int(numbers[i])
         boop.append(decimal)
+        # test the next object in the list
         i += 1
-
+    # return the newly created list
     return boop
 
 def find_negative(numbers: []) -> int:
@@ -77,10 +89,20 @@ def find_negative(numbers: []) -> int:
     """
     # TODO implement find_negative()
     i = 0
+    # saying while i is less then the length of the list 'numbers' and if the first is less than 0 then we print it
     while i < len(numbers):
         # print('i value: ' + str(i) + 'number value: ' + str(numbers[i]))
         if numbers[i] < 0:
             return i
+        # we are telling the code that after it returns the number if it is less than 0 we are telling the coed to test the next number in the list
         i += 1
 
     return -1
+
+def every_other(numbers: []) -> []:
+    """
+    create a method 'every other' 
+    it accepts an array (list) of ints
+    and returns a new array containing ONLY 
+    the origional numbers with even positions
+    """
