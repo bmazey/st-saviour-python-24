@@ -21,12 +21,14 @@ class Movie:
     def __init__(self):
         # notice the use of 'self' here
         self.patrons = []
+        #self patrons is an open list/ start of a line/queue
 
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
         # TODO implement enqueue()
         self.patrons.append(patron)
         return None
+    #return nothing, append the name of a patron to the end of the queue 
         
 
     def dequeue(self) -> str:
@@ -38,14 +40,17 @@ class Movie:
         # TODO implement dequeue()
         if self.patrons == []:
             return ''
+        #returns an open string of the list is empty 
         else:
             return (self.patrons.pop(0))
+        #pops the name or removes the name of the first patron in queue 
 
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
         first = self.patrons[0]
+        #the first person in the queue is 0, retuns the name of the first in line 
         return first
     
 
@@ -53,6 +58,7 @@ class Movie:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
         last = self.patrons[-1]
+        #last in line is -1, returns the name of the last patron in the queue 
         return last
 
     def is_empty(self) -> bool:
@@ -60,4 +66,5 @@ class Movie:
         # TODO implement is_empty()
         if self.patrons == []:
             return True
+        #if the list self patrons is empty returns the bool true
 

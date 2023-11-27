@@ -15,10 +15,12 @@ def evens_only(numbers: []) -> []:
     evens = []
     while i < len(numbers):
         if numbers[i] % 2 == 0:
+            #if the numbers within the list evens are modulo 2 they are even
             evens.append(numbers[i])
+            #apends evens into a list 
         i += 1
     return evens
-
+#returning even numbers of the list
 #if the numbers in the list "evens" are even(divisible by 2, %2), add the even number to the end of the list
 
 def last_of_four_digits(numbers: []) -> []:
@@ -58,13 +60,17 @@ def round_up(numbers: []) -> []:
     # TODO implement round_up()
     i = 0 
     beeb = []
+    #beeb is an open list 
     while i < len(numbers):
         beebo = numbers[i] % 1
+        #returning the same number 
         if beebo >= 0.5:
             beebo = int(numbers[i]) + 1
+            #returns the rounded number (int) adding 1 to produce the number rounded up
         else:
             beebo = int(numbers[i])
         beeb.append(beebo)
+        #appends the rounded numbers in beebo to the list beeb
         i += 1
     return beeb
 
@@ -82,7 +88,9 @@ def find_negative(numbers: []) -> int:
     # TODO implement find_negative()
     i = 0 
     while i < len(numbers):
-        if numbers [i] < 0:
+        if numbers [i] < 0: 
+            #if the numbers in the list of i are less that zero (negative) return the negative 
             return i
         i += 1
     return -1
+#return the negative one if there is no negative 
