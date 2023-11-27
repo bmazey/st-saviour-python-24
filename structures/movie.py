@@ -66,5 +66,4 @@ class Movie:
         # TODO implement is_empty()
         if self.patrons == []:
             return True
-        #if the list self patrons is empty returns the bool true
-
+        #if the list self patrons is empty returns the bool true 
