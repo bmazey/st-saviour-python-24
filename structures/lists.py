@@ -51,8 +51,18 @@ def round_up(numbers: []) -> []:
     :returns: a new list of rounded integers
     :rtype: []
     """
+
     # TODO implement round_up()
-    
+    round = []
+    i = 0 
+    while i < len(numbers) - 1:
+        if numbers[i] % 1 >= 0.5:
+            int(numbers[i]) + 1
+            round.append(numbers[i] % 10)
+        i += 1
+    return round
+
+
 
 def find_negative(numbers: []) -> int:
     """
