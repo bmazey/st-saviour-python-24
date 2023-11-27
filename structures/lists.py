@@ -94,3 +94,11 @@ def find_negative(numbers: []) -> int:
         i += 1
     return -1
 #return the negative one if there is no negative 
+
+def every_other(numbers: []) -> int:
+    """
+    every_other takes a list of integers and returns the numbers 
+    in the even positions within the list 
+    example: [4, 8, 16, 32, 64, 2, 6] -> 16, 64, 6
+    returns : numbers in even positions
+    """
