@@ -10,7 +10,6 @@ def evens_only(numbers: []) -> []:
     :returns: a new list of only even integers 
     :rtype: []
     """
-    # TODO implement evens_only()
     i = 0
      # make an empty list (this was annoying hense the name stupid) to have things added to the end
     stupid = []
@@ -36,7 +35,6 @@ def last_of_four_digits(numbers: []) -> []:
     :returns: a new list of last digits only
     :rtype: []
     """
-    # TODO implement last_of_four_digits()
     i = 0
     # make an empty list
     four = []
@@ -59,7 +57,6 @@ def round_up(numbers: []) -> []:
     :returns: a new list of rounded integers
     :rtype: []
     """
-    # TODO implement round_up()
     i = 0 
     # make an empty list
     boop = []
@@ -87,7 +84,6 @@ def find_negative(numbers: []) -> int:
     :returns: the position of the first negative integer or -1 if no such integer exists
     :rtype: int
     """
-    # TODO implement find_negative()
     i = 0
     # saying while i is less then the length of the list 'numbers' and if the first is less than 0 then we print it
     while i < len(numbers):
@@ -106,3 +102,10 @@ def every_other(numbers: []) -> []:
     and returns a new array containing ONLY 
     the origional numbers with even positions
     """
+    i = 0
+    while i < len(numbers):
+        if numbers[i].index % 2:
+            return numbers
+        i += 1
+    
+    return 

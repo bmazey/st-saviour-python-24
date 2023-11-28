@@ -21,7 +21,6 @@ class Movie:
         # we are saying that we are going to add a patron to the list
         self.patrons.append(patron)
         
-        # TODO implement enqueue()
         # We are telling the code that it shouldn't return anything
         return None
 
@@ -36,27 +35,25 @@ class Movie:
         if self.patrons == []:
             return ''
         else:
-            return (self.patrons.pop(0))
+            return self.patrons.pop(0)
         
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
-        # TODO implement first()
         # were creating a variable and saying it's equal to the first digit, 0, and then we are saying to return that digit
         first = self.patrons[0]
         return first
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
-        # TODO implement last()
         # were creating a variable and saying it is equal to the last digit in the list, then were saying to return that digit
         last = self.patrons[-1]
         return last
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
-        # TODO implement is_empty()
         # if the list is empty return true if it isn't return false
         if self.patrons == []:
             return True
+        return False
         
