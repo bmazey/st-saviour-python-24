@@ -76,5 +76,5 @@ def test_find_negative():
 
 def test_every_other():
     """verify every_other()"""
-    test = [4, 8, 16, 32, 64, 2, 6]
+    test = [2, 4, 8, 16, 32, 64, 128]
     result = every_other(test)

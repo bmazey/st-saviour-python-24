@@ -31,14 +31,14 @@ class Freighter:
         of an error
         """
         # TODO implement pop()
-        #FILO = First in last out
-        #FIFO = First in First Out 
+        # FILO = First in last out
+        # FIFO = First in First Out 
         if self.containers == []:
             return ''
-        #returns an open strin if the container list is equal to an empty list 
+        # returns an open strin if the container list is equal to an empty list 
         else:
             return (self.containers.pop(-1))
-        #if the list is not empty it returns whatever is at the end of the containers list
+        # if the list is not empty it returns whatever is at the end of the containers list
 
     def top(self) -> str:
         """reads and returns the name of the container on top of the stack"""
@@ -60,4 +60,4 @@ class Freighter:
         # TODO implement is_empty()
         if self.containers == []:
             return True
-        #if the self containers list is empty it returns that it is true 
+        # if the self containers list is empty it returns that it is true 

@@ -15,13 +15,13 @@ def evens_only(numbers: []) -> []:
     evens = []
     while i < len(numbers):
         if numbers[i] % 2 == 0:
-            #if the numbers within the list evens are modulo 2 they are even
+            # if the numbers within the list evens are modulo 2 they are even
             evens.append(numbers[i])
-            #apends evens into a list 
+            # apends evens into a list 
         i += 1
     return evens
-#returning even numbers of the list
-#if the numbers in the list "evens" are even(divisible by 2, %2), add the even number to the end of the list
+# returning even numbers of the list
+# if the numbers in the list "evens" are even(divisible by 2, %2), add the even number to the end of the list
 
 def last_of_four_digits(numbers: []) -> []:
     """
@@ -39,12 +39,12 @@ def last_of_four_digits(numbers: []) -> []:
     bean = []
     while  i < len(numbers):
         bag = numbers[i] % 10
-        #modulo 10 results in the last digit of the 4 digit number 
+        # modulo 10 results in the last digit of the 4 digit number 
         bean.append(bag)
-        #add the last digit( % 10) to the end of the list
+        # add the last digit( % 10) to the end of the list
         i += 1
     return bean
-#return the list 
+# return the list 
 
 
 def round_up(numbers: []) -> []:
@@ -60,17 +60,17 @@ def round_up(numbers: []) -> []:
     # TODO implement round_up()
     i = 0 
     beeb = []
-    #beeb is an open list 
+    # beeb is an open list 
     while i < len(numbers):
         beebo = numbers[i] % 1
-        #returning the same number 
+        # returning the same number 
         if beebo >= 0.5:
             beebo = int(numbers[i]) + 1
-            #returns the rounded number (int) adding 1 to produce the number rounded up
+            # returns the rounded number (int) adding 1 to produce the number rounded up
         else:
             beebo = int(numbers[i])
         beeb.append(beebo)
-        #appends the rounded numbers in beebo to the list beeb
+        # appends the rounded numbers in beebo to the list beeb
         i += 1
     return beeb
 
@@ -93,12 +93,13 @@ def find_negative(numbers: []) -> int:
             return i
         i += 1
     return -1
-#return the negative one if there is no negative 
+# return the negative one if there is no negative 
 
 def every_other(numbers: []) -> int:
     """
-    every_other takes a list of integers and returns the numbers 
-    in the even positions within the list 
-    example: [4, 8, 16, 32, 64, 2, 6] -> 16, 64, 6
-    returns : numbers in even positions
+    every_other accepts a list of int and returns 
+    every other object in the list 
+    example [2, 4, 8, 16, 32, 64, 128] -> 4, 16, 64
+
     """
+    # TODO implement every_other
