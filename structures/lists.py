@@ -59,7 +59,7 @@ def round_up(numbers: []) -> []:
         else:
             bobao = int(numbers[i])
         boba.append(bobao)
-    i+= 1
+        i+= 1
     return boba
 
 
