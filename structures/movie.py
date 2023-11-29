@@ -12,14 +12,15 @@ class Movie:
     implementation.
     """
     def __init__(self):
-        # notice the use of 'self' here
+        # Notice the use of 'self' here
         self.patrons = []
         
 
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
         # TODO implement enqueue()
-        #use of append to add a patron to the back of the queue
+        
+        # Use of append to add a patron to the back of the queue
         self.patrons.append(patron)
 
         return None
@@ -31,14 +32,16 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
-        #establish that the function must return an empty string if queue is empty
+        
+        # Establish that the function must return an empty string if queue is empty
         if self.is_empty():
             return ''
-        #If queue is not empty, establish patron as being the first element of the list
+        # If queue is not empty, establish patron as being the first element of the list
         else:
             patron = self.patrons[0]
-        #remove the first element from the list and return patron
+        # Remove the first element from the list and return patron
             self.patrons.pop(0)
+            
             return patron
             
         
@@ -48,19 +51,22 @@ class Movie:
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
-        #returnthe element at index 0 in list
+        
+        # Return the element at index 0 in list
         return self.patrons[0]
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
-        #return element at index -1 in list
+        
+        # Return element at index -1 in list
         last = self.patrons[-1]
         return last
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
         # TODO implement is_empty()
-        #establish that an empty string will is assigned to the true value of a boolean
+        
+        # Establish that an empty string will is assigned to the true value of a boolean
         if self.patrons == []:
             return True
