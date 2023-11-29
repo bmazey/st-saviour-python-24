@@ -103,3 +103,15 @@ def every_other(numbers: []) -> int:
 
     """
     # TODO implement every_other
+
+    other_value = []
+
+    for index in range(0, len(numbers), 2):
+# For each position (index) in a range beginning at 0 and skipping to 2 in the list
+# Considering the index 2 as 1
+    
+        other_value.append(numbers[index])
+# Append the value after the skipped index (0, skip, 1, skip, 2)
+
+    return other_value
+

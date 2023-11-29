@@ -78,3 +78,8 @@ def test_every_other():
     """verify every_other()"""
     test = [2, 4, 8, 16, 32, 64, 128]
     result = every_other(test)
+
+    assert result[0] == 2
+    assert result[1] == 8
+    assert result[2] == 32
+    assert result[3] == 128
