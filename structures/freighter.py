@@ -31,7 +31,7 @@ class Freighter:
         # TODO implement pop()
         if self.containers:
             removed_container = self.containers.pop()
-            print(f"{removed_container} has been removed from the stack")
+            print("{removed_container} has been removed from the stack")
             return removed_container
         else:
             print('stack is empty')
@@ -42,18 +42,12 @@ class Freighter:
         # TODO implement top()
         if self.containers:
             return self.containers[-1]
-        else:
-            print('stack is empty')
-            return ''
 
     def bottom(self) -> str:
         """reads and returns the name of the container on the bottom of the stack"""
         # TODO implement bottom()
         if self.containers:
             return self.containers[0]
-        else: 
-            print('stack is empty')
-            return ''
 
     def is_empty(self) -> bool:
         """returns True if containers is empty, and False otherwise"""
