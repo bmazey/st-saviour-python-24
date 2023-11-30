@@ -18,6 +18,7 @@ class Movie:
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
         # TODO implement enqueue()
+        self.patrons.append(patron)
         return None
 
     def dequeue(self) -> str:
@@ -27,19 +28,33 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
-        return ''
+        if self.patrons:
+            removed_patron = self.patrons.dequeue()
+            print(f"{removed_patron} has been removed from the patron")
+            return removed_patron
+        else:
+            print("dequeue is empty")
+            return ''
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
-        return ''
+        if self.patrons:
+            return self.patrons[0]
+        else:
+            print("queue is empty")
+            return ''
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
-        return ''
+        if self.patrons:
+            return self.patrons[-1]
+        else:
+            print('queue is empty')
+            return ''
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
         # TODO implement is_empty()
-        return True
+        return len(self.patrons) == 0
