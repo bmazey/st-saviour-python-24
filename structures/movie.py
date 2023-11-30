@@ -14,10 +14,14 @@ class Movie:
     def __init__(self):
         # notice the use of 'self' here
         self.patrons = []
+        # saying that self.patrons is an empty list
 
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
-        # TODO implement enqueue()
+        # we are saying that we are going to add a patron to the list
+        self.patrons.append(patron)
+        
+        # We are telling the code that it shouldn't return anything
         return None
 
     def dequeue(self) -> str:
@@ -27,19 +31,29 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
-        return ''
+        # if the list is empty return an empty string, otherwise remove the first patron from the list and return it as a string
+        if self.patrons == []:
+            return ''
+        else:
+            return self.patrons.pop(0)
+        
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
-        # TODO implement first()
-        return ''
+        # were creating a variable and saying it's equal to the first digit, 0, and then we are saying to return that digit
+        first = self.patrons[0]
+        return first
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
-        # TODO implement last()
-        return ''
+        # were creating a variable and saying it is equal to the last digit in the list, then were saying to return that digit
+        last = self.patrons[-1]
+        return last
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
-        # TODO implement is_empty()
-        return True
+        # if the list is empty return true if it isn't return false
+        if self.patrons == []:
+            return True
+        return False
+        

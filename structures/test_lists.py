@@ -3,6 +3,7 @@ from structures.lists import evens_only
 from structures.lists import last_of_four_digits
 from structures.lists import round_up
 from structures.lists import find_negative
+from structures.lists import every_other
 
 def test_evens_only():
     """verify evens_only()"""
@@ -72,3 +73,15 @@ def test_find_negative():
     result = find_negative(second)
 
     assert result == 3
+
+def test_every_other():
+    """verify every_other()"""
+    test = [1, 3, 2, 4, -4, -11, 8, 0, -1]
+    result = every_other(test)
+
+    assert result[0] == 1
+    assert result[1] == 2
+    assert result[2] == -4
+    assert result[3] == 8
+    assert result[4] == -1
+    assert len(result) == 5
