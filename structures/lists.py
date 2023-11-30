@@ -95,7 +95,7 @@ def find_negative(numbers: []) -> int:
 
     return -1
 
-def every_other(numbers: []) -> []:
+def every_other(numbers: []) -> int:
     """
     create a method 'every other' 
     it accepts an array (list) of ints
@@ -103,9 +103,11 @@ def every_other(numbers: []) -> []:
     the origional numbers with even positions
     """
     i = 0
-    while i < len(numbers):
-        if numbers[i].index % 2:
-            return numbers
-        i += 1
-    
-    return 
+    other = []
+    # for the list we have we are counting the first position (0), skipping the second, then printing the third which is position 2
+    for i in range(0, len(numbers), 2):
+            # we are telling the code to add the numbers that are counted to a list, then move onto the next set of numbers
+            other.append(numbers[i])
+            i += 1
+    # return the full, final list
+    return other

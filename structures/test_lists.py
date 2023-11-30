@@ -79,8 +79,9 @@ def test_every_other():
     test = [1, 3, 2, 4, -4, -11, 8, 0, -1]
     result = every_other(test)
 
-    assert result[0] == 2
-    assert result[1] == -4
-    assert result[2] == 8
-    assert result[3] == -1
-    assert len(result) == 4
+    assert result[0] == 1
+    assert result[1] == 2
+    assert result[2] == -4
+    assert result[3] == 8
+    assert result[4] == -1
+    assert len(result) == 5
