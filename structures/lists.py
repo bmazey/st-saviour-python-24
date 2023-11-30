@@ -115,4 +115,3 @@ def every_other(numbers: []) -> int:
 # Append the value after the skipped index (0, skip, 1, skip, 2)
 
     return other_value
-
