@@ -55,12 +55,18 @@ def round_up(numbers: []) -> []:
     # TODO implement round_up()
     round = []
     i = 0 
-    while i < len(numbers) - 1:
+    while i < len(numbers):
         if numbers[i] % 1 >= 0.5:
-            int(numbers[i]) + 1
-            round.append(numbers[i] % 10)
+            x = int(numbers[i]) + 1
+            round.append(x)
+        else: 
+            y = int(numbers[i])
+            round.append(y)
         i += 1
     return round
+
+    
+    
 
 
 

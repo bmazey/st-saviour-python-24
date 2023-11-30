@@ -43,4 +43,5 @@ class Freighter:
     def is_empty(self) -> bool:
         """returns True if containers is empty, and False otherwise"""
         # TODO implement is_empty()
+        
         return True
