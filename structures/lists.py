@@ -105,6 +105,7 @@ def every_other(numbers: []) -> int:
     # TODO implement every_other
 
     other_value = []
+# index returns position of a specified value 
 
     for index in range(0, len(numbers), 2):
 # For each position (index) in a range beginning at 0 and skipping to 2 in the list
