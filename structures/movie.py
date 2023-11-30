@@ -28,31 +28,21 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
-        if self.patrons:
-            removed_patron = self.patrons.dequeue()
-            print(f"{removed_patron} has been removed from the patron")
-            return removed_patron
-        else:
-            print("dequeue is empty")
+        if len(self.patrons) == 0:
             return ''
-
+        name = self.patrons[0]
+        self.patrons.pop(0)
+        return name
+    
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
-        if self.patrons:
-            return self.patrons[0]
-        else:
-            print("queue is empty")
-            return ''
+        return self.patrons[0]
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
-        if self.patrons:
-            return self.patrons[-1]
-        else:
-            print('queue is empty')
-            return ''
+        return self.patrons[-1]
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""

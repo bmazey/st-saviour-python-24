@@ -40,14 +40,12 @@ class Freighter:
     def top(self) -> str:
         """reads and returns the name of the container on top of the stack"""
         # TODO implement top()
-        if self.containers:
-            return self.containers[-1]
+        return self.containers[-1]
 
     def bottom(self) -> str:
         """reads and returns the name of the container on the bottom of the stack"""
         # TODO implement bottom()
-        if self.containers:
-            return self.containers[0]
+        return self.containers[0]
 
     def is_empty(self) -> bool:
         """returns True if containers is empty, and False otherwise"""
