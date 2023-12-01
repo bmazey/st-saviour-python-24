@@ -1,4 +1,4 @@
-"""lists in python"""
+"""lists in python: https://docs.python.org/3/tutorial/datastructures.html"""
 def evens_only(numbers: []) -> []:
     """
     evens_only() accepts a list of integers called "numbers" and returns a
@@ -6,12 +6,25 @@ def evens_only(numbers: []) -> []:
     list, preserving the initial order.
     for example [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
     :param numbers: the original list of integers
-    :type number: []
+    :type numbers: []
     :returns: a new list of only even integers 
     :rtype: []
     """
-    # TODO implement evens_only()
-    return []
+    # making a list for the even numbers to go in
+    evens = []
+    # sets variable i to first position in the list
+    i = 0
+    # stating that i is less than the length of numbers shows that i represents a position inside the list
+    while i < len(numbers):
+        # mod 2 because only even numbers are divisible by 2 and have no remainder
+        if numbers[i] % 2 == 0:
+        # adds those numbers to the list of evens
+            evens.append(numbers[i])
+        # move to the next position
+        i += 1
+    return evens
+
+
 
 def last_of_four_digits(numbers: []) -> []:
     """
@@ -20,12 +33,22 @@ def last_of_four_digits(numbers: []) -> []:
     original numbers, preserving the initial order.
     for example [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
     :param numbers: the original list of four digit integers
-    :type number: []
+    :type numbers: []
     :returns: a new list of last digits only
     :rtype: []
     """
-    # TODO implement last_of_four_digits()
-    return []
+    # list for remainders
+    remainder = []
+    # set to first position in list
+    i = 0
+    # i is a position inside the list
+    while i < len(numbers): 
+        # mod 10 to get the remainder that is in the ones place of the number
+        # also appending that to the list of remainders
+        remainder.append(numbers[i] % 10) 
+        # move to next position
+        i += 1
+    return remainder
 
 def round_up(numbers: []) -> []:
     """
@@ -33,12 +56,33 @@ def round_up(numbers: []) -> []:
     as a general rule, we only round up when the decimal is >= 5.
     for example [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
     :param numbers: the original list of doubles
-    :type number: []
+    :type numbers: []
     :returns: a new list of rounded integers
     :rtype: []
     """
-    # TODO implement round_up()
-    return []
+    # list for rounded numbers
+    round = []
+    # first position in list
+    i = 0 
+    # while loop states that the position is less then the length of the numbers list
+    while i < len(numbers):
+        # numbers mod 1 because all whole numbers are divisible by 1, so the remainder would be the decimal
+        # if statement for if the remainder is greater than 0.5
+        if numbers[i] % 1 >= 0.5:
+        # makes that number an integer which removes the decimal value
+        # adds 1 because that would be equivalent of rounding up to the next number
+            x = int(numbers[i]) + 1
+            # appends the variable for the rounded number 
+            round.append(x)
+        # else statement for numbers that get rounded down
+        else: 
+            # makes the other numbers integers, which automatically rounds them down
+            y = int(numbers[i])
+            # appends rounded numbers to the round list
+            round.append(y)
+        # move to the next position
+        i += 1
+    return round
 
 def find_negative(numbers: []) -> int:
     """
@@ -47,9 +91,34 @@ def find_negative(numbers: []) -> int:
     should return -1.
     for example: [0, 4, -2, 17] -> 2
     :param numbers: the original list of integers
-    :type number: []
+    :type numbers: []
     :returns: the position of the first negative integer or -1 if no such integer exists
     :rtype: int
     """
-    # TODO implement find_negative()
+    # sets i to position 0 
+    i = 0 
+    # position i is less than the list of numers
+    while i < len(numbers):
+        #print('i value: ' + str(i) + 'number value: ' + str(numbers[i]))
+        # if the number in the position is less then 0 it must be negative 
+        if numbers[i] < 0:
+    
+            return i
+        # move to next position
+        i += 1
+   
     return -1
+
+def every_other(input: []) -> int: 
+    input = []
+    # x is the variable representing the position 
+    # tests the first position (position 0)
+    x = 0
+    # even positions will be mod 2 while equaling 0
+    while x % 2 == 0:
+        # appending the even positions to the every_other 
+        every_other.append(x)
+    # test next position
+    x += 1
+    return every_other
+    

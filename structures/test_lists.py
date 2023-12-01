@@ -72,3 +72,9 @@ def test_find_negative():
     result = find_negative(second)
 
     assert result == 3
+
+def every_other():
+    test = [1, 2, 3, 4, 5, 6]
+    result = every_other(test)
+
+    assert result == [1, 3, 5,]
