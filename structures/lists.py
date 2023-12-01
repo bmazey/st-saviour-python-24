@@ -1,90 +1,93 @@
-"""lists in python: 88"""
+# Function to filter even numbers from a list
 def evens_only(numbers: []) -> []:
     """
     evens_only() accepts a list of integers called "numbers" and returns a
     new list of integers which only contains the even members of the original
     list, preserving the initial order.
-    for example [3, 7, 12, 4, 13, 0] -> [12, 4, 0]
-    :param numbers: the original list of integers
-    :type numbers: []
-    :returns: a new list of only even integers 
-    :rtype: []
     """
-    # TODO implement evens_only()
+    # Initialize an index variable
     i = 0
     evens = []
+    
+    # Iterate through the numbers list
     while i < len(numbers):
+        # Check if the number is even
         if numbers[i] % 2 == 0:
-            evens.append(numbers[i])
+            evens.append(numbers[i])  # Add even number to the result list
         i += 1
+    
     return evens
 
+# Function to extract the last digit from four-digit integers in a list
 def last_of_four_digits(numbers: []) -> []:
     """
     last_of_four_digits() takes a list of FOUR DIGIT INTEGERS ONLY [1000 - 9999]
     and returns a new list of integers which contains the final digit of the 
     original numbers, preserving the initial order.
-    for example [1004, 9181, 1700, 4565] -> [4, 1, 0, 5]
-    :param numbers: the original list of four digit integers
-    :type numbers: []
-    :returns: a new list of last digits only
-    :rtype: []
     """
-    # TODO implement last_of_four_digits()
+    # Initialize an index variable
     i = 0
     leap = []
+    
+    # Iterate through the numbers list
     while i < len(numbers):
-        bag = numbers [i] % 10
-        leap.append(bag)
+        bag = numbers[i] % 10  # Extract the last digit
+        leap.append(bag)  # Add the last digit to the result list
         i += 1
+    
     return leap
 
+
+# Function to round up decimal numbers in a list to the nearest integer
 def round_up(numbers: []) -> []:
     """
     round_up() takes a list of DOUBLES and returns a new list of rounded INTEGERS.
     as a general rule, we only round up when the decimal is >= 5.
-    for example [1.2, 3.6, 7.9, 4.1] -> [1, 4, 8, 4]
-    :param numbers: the original list of doubles
-    :type numbers: []
-    :returns: a new list of rounded integers
-    :rtype: []
     """
-    # TODO implement round_up()
+    # Initializes an index variable
     i = 0
     boba = []
+    
+    # Iterates through the numbers list
     while i < len(numbers):
-        bobao = numbers[i] % 1
+        bobao = numbers[i] % 1  # Get the decimal part of the number
         if bobao >= 0.5:
-            bobao = int(numbers[i]) + 1
+            bobao = int(numbers[i]) + 1  # Round up if decimal >= 0.5
         else:
-            bobao = int(numbers[i])
-        boba.append(bobao)
-        i+= 1
+            bobao = int(numbers[i])  # (Round down if decimal < 0.5)
+        boba.append(bobao)  # Adds the rounded number to the result list
+        i += 1
+    
     return boba
 
-
+# Function to find the position of the first negative number in a list
 def find_negative(numbers: []) -> int:
     """
     find_negative() takes a list of integers and returns the position of the
-    first occurence of a negative number. if no such number exists find_negative()
+    first occurrence of a negative number. If no such number exists, find_negative()
     should return -1.
-    for example: [0, 4, -2, 17] -> 2
-    :param numbers: the original list of integers
-    :type numbers: []
-    :returns: the position of the first negative integer or -1 if no such integer exists
-    :rtype: int
     """
-    
+    # Initialize an index variable
     i = 0
-    while i < len(numbers): 
-       #print('i value: ' + str(i) + ' number value: ' + str(numbers[i]))
-       if numbers[i] < 0:
-          return i
-       i += 1
-      
-    return -1
+    
+    # Iterate through the numbers list
+    while i < len(numbers):
+        # Check if the number is negative
+        if numbers[i] < 0:
+            return i  # Returns the position of the first negative number
+        i += 1
+    
+    return -1  # Return -1 if no negative number is found
 
 # bonus
 # create a method "every other" which accepts an array(list)
 # of ints ans returns a new array returning only the original numbers of even positions.
+
+def every_other(input_array):
+    return input_array[::2] 
+
+original_array = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result_array = every_other(original_array)
+
+print(result_array)
 

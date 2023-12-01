@@ -1,8 +1,5 @@
 """a test suite for lists.py"""
-from structures.lists import evens_only
-from structures.lists import last_of_four_digits
-from structures.lists import round_up
-from structures.lists import find_negative
+from structures.lists import evens_only, last_of_four_digits, round_up, find_negative
 
 def test_evens_only():
     """verify evens_only()"""
@@ -72,3 +69,5 @@ def test_find_negative():
     result = find_negative(second)
 
     assert result == 3
+
+    
