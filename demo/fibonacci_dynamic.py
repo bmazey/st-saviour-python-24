@@ -1,5 +1,4 @@
-def fibonacci(position: int) -> int:
-
+def fibonacci_dynamic(position: int) -> int:
     list = []
     if position < 0:
         return 0
@@ -7,10 +6,10 @@ def fibonacci(position: int) -> int:
         return 1
     
     i = 2
-    list[0] = 1
-    list[1] = 1
+    list.append(1)
+    list.append(1)
 
-    while i <= position:
-        list[i] = list[i-1] + list[i-2]
+    while i < position:
+        list.append(list[i-1] + list[i-2])
         i += 1
     return list[-1]
