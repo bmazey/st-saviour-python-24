@@ -17,6 +17,7 @@ class Movie:
 
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
+         # TODO implement enqueue()
         # adds a patron to the partons list
         self.patrons.append(patron)
         return None
@@ -27,6 +28,7 @@ class Movie:
         dequeue() should return an empty string instead of an error if
         someone tries to dequeue from an empty patrons list
         """
+        # TODO implement dequeue()
         # has to be the empty string first.
         # someone tries to dequeue from the patron and return empty string and not error
         # use pop function to remove the first from the list and return patrons
