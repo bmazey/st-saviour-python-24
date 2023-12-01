@@ -11,11 +11,17 @@ def evens_only(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement evens_only()
+    # making a list for the even numbers to go in
     evens = []
+    # sets variable i to first position in the list
     i = 0
+    # stating that i is less than the length of numbers shows that i represents a position inside the list
     while i < len(numbers):
+    # mod 2 because only even numbers are divisible by 2 and have no remainder
         if numbers[i] % 2 == 0:
+    # adds those numbers to the list of evens
             evens.append(numbers[i])
+    # move to the next position
         i += 1
     return evens
 
@@ -33,11 +39,16 @@ def last_of_four_digits(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement last_of_four_digits()
-
+    # list for remainders
     remainder = []
+    # set to first position in list
     i = 0
+    # i is a position inside the list
     while i < len(numbers): 
+    # mod 10 to get the remainder that is in the ones place of the number
+    # also appending that to the list of remainders
         remainder.append(numbers[i] % 10) 
+    # move to next position
         i += 1
     return remainder
 
@@ -53,8 +64,11 @@ def round_up(numbers: []) -> []:
     """
 
     # TODO implement round_up()
+    # list for rounded numbers
     round = []
+    #first position in list
     i = 0 
+    
     while i < len(numbers):
         if numbers[i] % 1 >= 0.5:
             x = int(numbers[i]) + 1

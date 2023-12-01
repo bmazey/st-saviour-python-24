@@ -28,9 +28,12 @@ class Movie:
         someone tries to dequeue from an empty patrons list
         """
         # TODO implement dequeue()
+        # states that the length of self.patrons is zero, checks to see if empty
         if len(self.patrons) == 0:
             return ''
+        # making a variable for the name of the first patron
         name = self.patrons[0]
+        # removing first patron in the list
         self.patrons.pop(0)
         return name
         
