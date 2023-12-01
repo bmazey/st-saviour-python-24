@@ -69,3 +69,16 @@ if __name__ == '__structures__':
     # numbers = [2, 3, 7, 8, 10]
     # result = even_only(numbers)
     # print('result: ' + str(result))
+
+    # bonus
+ # create a method "every other" which accepts an array(list)
+ # of ints ans returns a new array returning only the original numbers of even positions.
+
+class numbermanipulator:
+    def every_other(numbers):
+        return numbers[1::2] # Starting from index 1, skip every other element
+    
+    original_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    result = every_other(original_array)
+    print("original Array:", original_array)
+    print("numbers at even positions:", result)

@@ -89,10 +89,5 @@ def find_negative(numbers: []) -> int:
     return -1
 
 
- # bonus
- # create a method "every other" which accepts an array(list)
- # of ints ans returns a new array returning only the original numbers of even positions.
+ 
 
-class numbermanipulator:
-    def every_other(self, numbers):
-        return numbers[1::2]
