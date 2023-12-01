@@ -12,12 +12,13 @@ class Movie:
     implementation.
     """
     def __init__(self):
-        # notice the use of 'self' here
+        # Initialize an empty list to store patrons in the queue
         self.patrons = []
 
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
-        # TODO implement enqueue()
+        # Add a patron to the end of the queue
+        self.patrons.append(patron)
         return None
 
     def dequeue(self) -> str:
@@ -26,20 +27,25 @@ class Movie:
         dequeue() should return an empty string instead of an error if
         someone tries to dequeue from an empty patrons list
         """
-        # TODO implement dequeue()
-        return ''
-
+        # Check if the queue is empty
+        if len(self.patrons) == 0:
+            return ''
+        # Remove and return the name of the first patron in line
+        name = self.patrons[0]
+        self.patrons.pop(0)
+        return name
+    
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
-        # TODO implement first()
-        return ''
+        # Return the name of the first patron without removing them from the queue
+        return self.patrons[0]
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
-        # TODO implement last()
-        return ''
+        # Return the name of the last patron without removing them from the queue
+        return self.patrons[-1]
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
-        # TODO implement is_empty()
-        return True
+        # Check if the queue is empty
+        return len(self.patrons) == 0
