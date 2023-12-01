@@ -10,7 +10,9 @@ def evens_only(numbers: []) -> []:
     :returns: a new list of only even integers 
     :rtype: []
     """
-    # TODO implement evens_only()
+    # if the number in the list evens are module by 2 there are even
+    # add even in the list with append function
+    # return evens numbers of the list
     i = 0
     evens = []
     while i < len(numbers):
@@ -30,7 +32,9 @@ def last_of_four_digits(numbers: []) -> []:
     :returns: a new list of last digits only
     :rtype: []
     """
-    # TODO implement last_of_four_digits()
+    # % 10 result the last digit of the 4 digits numbers
+    # add the last digit at the end of the list
+    # return the new list
     i = 0
     leap = []
     while i < len(numbers):
@@ -49,7 +53,9 @@ def round_up(numbers: []) -> []:
     :returns: a new list of rounded integers
     :rtype: []
     """
-    # TODO implement round_up()
+    # return the rounded number adding 1
+    # add the rounded numbers to the star in lunar 
+    # return star
     i = 0
     star = []
     while i < len(numbers):
@@ -73,7 +79,7 @@ def find_negative(numbers: []) -> int:
     :returns: the position of the first negative integer or -1 if no such integer exists
     :rtype: int
     """
-    # TODO implement find_negative()
+    # the number if it is less than 0 return negative 
     i = 0   
     while i <  len(numbers):
         if numbers[i]< 0:
@@ -81,3 +87,12 @@ def find_negative(numbers: []) -> int:
         i += 1
 
     return -1
+
+
+ # bonus
+ # create a method "every other" which accepts an array(list)
+ # of ints ans returns a new array returning only the original numbers of even positions.
+
+class numbermanipulator:
+    def every_other(self, numbers):
+        return numbers[1::2]
