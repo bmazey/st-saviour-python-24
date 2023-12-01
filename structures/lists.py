@@ -11,7 +11,23 @@ def evens_only(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement evens_only()
-    return []
+    
+    # Create an open string
+    evens = []
+    i = 0
+    
+    # Establish a while loop to test all elements of the test list
+    while i < len(numbers):
+    # If the element in the test list is divisible by 2, it should be added to the open list
+        if numbers[i] % 2 == 0: 
+            evens.append(numbers[i])
+        i += 1
+    
+    # Return the originally empty list with the the even values in numbers.        
+    return evens
+        
+ 
+
 
 def last_of_four_digits(numbers: []) -> []:
     """
@@ -25,7 +41,19 @@ def last_of_four_digits(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement last_of_four_digits()
-    return []
+    
+    # Create open list to return
+    # Use of while loop to test every element in list
+    i = 0
+    four = []
+    while i < len(numbers):
+    # Any element mod 10 in the numbers list will return the last digit of a 4 digit integer
+        num = numbers[i] % 10
+    # Add that last didgit of each integer to the returned list
+        four.append(num)
+        i += 1
+    
+    return four
 
 def round_up(numbers: []) -> []:
     """
@@ -38,7 +66,27 @@ def round_up(numbers: []) -> []:
     :rtype: []
     """
     # TODO implement round_up()
-    return []
+    
+    # Create open list which will be returned
+    i = 0
+    rounded = []
+    
+    # Create while loop to analyze each value in numbers list
+    while i < len(numbers):
+        decimal = numbers[i] % 1
+    
+    # If each value mod 1 is equal or higher than 0.5, round up (by adding 1)
+        if decimal >= 0.5:
+         decimal = int(numbers[i]) + 1
+    
+    #If the value mod 1 is equal to less that 0.5, round down (by converting to int)
+        else:
+         decimal = int(numbers[i])
+        rounded.append(decimal)
+        i += 1
+
+    return rounded
+
 
 def find_negative(numbers: []) -> int:
     """
@@ -52,4 +100,39 @@ def find_negative(numbers: []) -> int:
     :rtype: int
     """
     # TODO implement find_negative()
+    
+    # Numbers are negatve if equal to less that zero
+    # i is an integer representing the index placement of each number in the list
+    i = 0 
+    while i < len(numbers):
+            numbers[i]
+            if numbers[i] < 0:
+    # Return each value of i that has a corresponding integer in the list less than 0
+                return i 
+            i += 1
+    
+    # If there are no negatives, return -1 
     return -1
+    
+def every_other(numbers: []) -> []:
+    # Define that each every_other accepts a list (numbers) and returns a list
+    """
+    every_other() accepts a list of integers and returns a new list containing 
+    only the original numbers with even positions
+    """
+    # TODO implement every_other()
+    
+    # Create open list that i going to be returned
+    evens = []
+    
+    # Insert a slice to define every other integer in numbers into a variable
+    slice = numbers[::2]
+    
+    # Add these integers to the new list
+    evens.append(slice)
+    
+    # Return the list
+    return evens
+        
+            
+    
