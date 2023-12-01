@@ -18,6 +18,7 @@ class Movie:
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
         # TODO implement enqueue()
+        # appends patron to the self.patrons list
         self.patrons.append(patron)
         return None
 
@@ -40,19 +41,27 @@ class Movie:
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
         # TODO implement first()
+        # position 0 is the first position, so it returns the position of the first patron
         return self.patrons[0]
         
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
         # TODO implement last()
+        # the last position in the list is one less then the whole legnth of the list
+        # because positions start at 0, the final position is 1 less then the total length 
+        # create a variable for the last patron in line, called last
         last = len(self.patrons) - 1
+        # return the last of self.patrons
         return self.patrons[last]
 
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
         # TODO implement is_empty()
+        # an empty line would have no one waiting on it, so an empty list would have nothing in it
         if len(self.patrons) == 0:
+        # returns true if the length is 0 because the list it would be true that the list is empty if the list had nothing in it
             return True
+        # in case the list doesnt have a length of 0, it will move on and automatically return false
         return False

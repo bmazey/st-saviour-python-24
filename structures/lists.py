@@ -78,10 +78,13 @@ def round_up(numbers: []) -> []:
             x = int(numbers[i]) + 1
     # appends the variable for the rounded number 
             round.append(x)
-    # else statement for numbers that
+    # else statement for numbers that get rounded down
         else: 
+    # makes the other numbers integers, which automatically rounds them down
             y = int(numbers[i])
+    # appends rounded numbers to the round list
             round.append(y)
+    # move to the next position
         i += 1
     return round
 
@@ -102,11 +105,16 @@ def find_negative(numbers: []) -> int:
     :rtype: int
     """
     # TODO implement find_negative()
+    # sets i to position 0 
     i = 0 
+    # position i is less than the list of numers
     while i < len(numbers):
         #print('i value: ' + str(i) + 'number value: ' + str(numbers[i]))
+    # if the number in the position is less then 0 it must be negative 
         if numbers[i] < 0:
+    
             return i
+    # move to next position
         i += 1
    
     return -1
