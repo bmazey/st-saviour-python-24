@@ -66,6 +66,6 @@ if __name__ == '__structures__':
     result = find_negative(numbers)
     print('result: ' + str(result))
 
-    numbers = [2, 3, 7, 8, 10]
-    result = even_only(numbers)
-    print('result: ' + str(result))
+    # numbers = [2, 3, 7, 8, 10]
+    # result = even_only(numbers)
+    # print('result: ' + str(result))
