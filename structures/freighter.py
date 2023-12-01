@@ -32,23 +32,21 @@ class Freighter:
         if len(self.containers) == 0:
             return ''
         x = len(self.containers) - 1
-        while len(self.containers) - 1:
-            name = self.containers[x]
-            self.containters.pop(x)
-            return name
+        name = self.containers[x]
+        self.containers.pop(x)
+        return name
         
 
     def top(self) -> str:
         """reads and returns the name of the container on top of the stack"""
         # TODO implement top()
-        name = len(self.containers) - 1
-        return name
+        last = len(self.containers) - 1
+        return self.containers[last]
 
     def bottom(self) -> str:
         """reads and returns the name of the container on the bottom of the stack"""
         # TODO implement bottom()
-        name = self.containers
-        return name
+        return self.containers[0]
 
     def is_empty(self) -> bool:
         """returns True if containers is empty, and False otherwise"""

@@ -66,13 +66,19 @@ def round_up(numbers: []) -> []:
     # TODO implement round_up()
     # list for rounded numbers
     round = []
-    #first position in list
+    # first position in list
     i = 0 
-    
+    # while loop states that the position is less then the length of the numbers list
     while i < len(numbers):
+    # numbers mod 1 because all whole numbers are divisible by 1, so the remainder would be the decimal
+    # if statement for if the remainder is greater than 0.5
         if numbers[i] % 1 >= 0.5:
+    # makes that number an integer which removes the decimal value
+    # adds 1 because that would be equivalent of rounding up to the next number
             x = int(numbers[i]) + 1
+    # appends the variable for the rounded number 
             round.append(x)
+    # else statement for numbers that
         else: 
             y = int(numbers[i])
             round.append(y)
