@@ -18,7 +18,6 @@ class Freighter:
 
     def push(self, container: str) -> None:
         """adds a new container to the stack containers and returns None"""
-        # TODO implement push()
         # adds/appends a container to self.containers 
         self.containers.append(container)
         return None
@@ -29,10 +28,9 @@ class Freighter:
         returns an empty string if the containers stack is empty, instead 
         of an error
         """
-        # TODO implement pop()
         # empty lists will have a len of 0
         if len(self.containers) == 0:
-        # returns empty quotes cause theres nothing in it
+            # returns empty quotes cause theres nothing in it
             return ''
         # variable x represents the container that is on top of all the other containers
         # on a freighter, the container on the top gets removed first
@@ -49,7 +47,6 @@ class Freighter:
 
     def top(self) -> str:
         """reads and returns the name of the container on top of the stack"""
-        # TODO implement top()
         # the position of container on the top is one less of the total length of the stack
         last = len(self.containers) - 1
         # return the variable that represents top container in self.containers
@@ -57,19 +54,17 @@ class Freighter:
 
     def bottom(self) -> str:
         """reads and returns the name of the container on the bottom of the stack"""
-        # TODO implement bottom()
         # the container on the bottom of the stack has the first position
         # 0 is the first position, so self.containers[0] gets returned
         return self.containers[0]
 
     def is_empty(self) -> bool:
         """returns True if containers is empty, and False otherwise"""
-        # TODO implement is_empty()
         # empty containers have a length of 0
         if len(self.containers) == 0:
-        # if the list has nothing in it, it will return true
+            # if the list has nothing in it, it will return true
             return True
         # if self.containers has something in it, the len will be > 0 
         if len(self.containers) > 0:
-        # then it will be false cause the list is not empty
+            # then it will be false cause the list is not empty
             return False
