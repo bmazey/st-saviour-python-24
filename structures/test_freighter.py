@@ -3,7 +3,6 @@ from structures.freighter import Freighter
 
 def test_freighter():
     """verify freighter stack implementation"""
-
     # create a Freighter called S.S. Anne
     ss_anne = Freighter()
 
