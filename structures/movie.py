@@ -17,7 +17,7 @@ class Movie:
 
     def enqueue(self, patron: str) -> None:
         """adds a patron to the patrons list, returns None"""
-        # TODO implement enqueue()
+        self.patrons.append(patron)
         return None
 
     def dequeue(self) -> str:
@@ -26,20 +26,21 @@ class Movie:
         dequeue() should return an empty string instead of an error if
         someone tries to dequeue from an empty patrons list
         """
-        # TODO implement dequeue()
-        return ''
+        if self.is_empty():
+            return ''
+        
+        name = self.patrons[0]
+        self.patrons = self.patrons[1::]
+        return name
 
     def first(self) -> str:
         """reads and returns the name of the first patron in line"""
-        # TODO implement first()
-        return ''
+        return self.patrons[0]
 
     def last(self) -> str:
         """reads and returns the name of the last patron in line"""
-        # TODO implement last()
-        return ''
+        return self.patrons[-1]
 
     def is_empty(self) -> bool:
         """returns True if the patrons list is empty, and false otherwise"""
-        # TODO implement is_empty()
-        return True
+        return len(self.patrons) == 0
