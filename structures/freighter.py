@@ -40,7 +40,7 @@ class Freighter:
         # name is the name of the last container in self.containers
         # the name needs to be accounted for before it gets removed
         name = self.containers[x]
-        # .pop removes the last container in the list
+        # .pop removes the last  container in the list
         self.containers.pop(x)
         return name
         
