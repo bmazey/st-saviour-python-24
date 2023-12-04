@@ -37,6 +37,7 @@ def last_of_four_digits(numbers: []) -> []:
     last = []
     i = 0
     while i < len(numbers):
+        # uses mod 10 so you can get the reminder 
         last.append(numbers[i] % 10)
         i += 1
     return last
@@ -56,6 +57,7 @@ def round_up(numbers: []) -> []:
     i = 0
     while i < len(numbers):
         if numbers[i] % 1 >= 0.5:
+            # int makes the number an integer so you could round it
             up = int(numbers[i] + 1)
             round.append(up)
         else:
@@ -78,6 +80,7 @@ def find_negative(numbers: []) -> int:
     # TODO implement find_negative()
     i = 0
     while i < len(numbers):
+       # sees if the number is less then zero to prove it is negative
       if numbers[i] < 0:
         return i
       i += 1
