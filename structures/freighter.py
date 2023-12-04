@@ -30,7 +30,7 @@ class Freighter:
         Removes the container on top of the stack and returns its name.
         Returns an empty string if the containers stack is empty.
         """
-        # Check if the stack is not empty before trying to pop
+        # Checks that the stack is not empty before trying to pop
         if not self.is_empty():
             return self.containers.pop()
         # Return an empty string if the stack is empty
@@ -52,10 +52,10 @@ class Freighter:
         Reads and returns the name of the container on the bottom of the stack.
         Returns an empty string if the containers stack is empty.
         """
-        # Checking if the stack is not empty before accessing the first element
+        # Checking if the stack is not empty before opening the first element
         if not self.is_empty():
             return self.containers[0]
-        # Return an empty string if the stack is empty
+        # Returns an empty string if the stack is empty
         return ''
 
     def is_empty(self) -> bool:
