@@ -6,4 +6,4 @@ class Music:
         self.name = name
 
     def play(self, song: str):
-        return song + 'is a song that plays at' + self.bpm + 'with' + self.instruments + 'has lyrics' + self.lyrics(True)
+        return song + self.name + 'is a song that plays at' + self.bpm + 'bpm with' + self.instruments
