@@ -1,10 +1,10 @@
 
 class Music: 
-    def __init__(self, bpm: int, instruments: [], lyrics: bool, name: str):
+    def __init__(self, title: str, bpm: int, instruments: [], lyrics: bool):
+        self.title = title
         self.bpm = bpm
         self.instruments = instruments
         self.lyrics = lyrics
-        self.name = name
     
-    def play(self, song:str):
-        return 'the songs name is' + self.name + ' it plays at ' + str(self.bpm) + ' beats per minute and has  ' + self.instruments + ' instruments in it.'
+    def play(self) -> str:
+        return self.title + ' is a song that plays at ' + str(self.bpm) + ' beats per minute with ' + str(self.instruments[0])
