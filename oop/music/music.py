@@ -7,4 +7,4 @@ class Music:
         self.lyrics = lyrics
     
     def play(self) -> str:
-        return self.title + ' is a song that plays at ' + str(self.bpm) + ' beats per minute with ' + str(self.instruments[0])
+        return self.title + ' is a song that plays at ' + str(self.bpm) + ' beats per minute with ' + str(*self.instruments)
