@@ -1,4 +1,4 @@
-from oop.animal import Animal
+from oop.mammal.animal import Animal
 from oop.mammal.mammal import Mammal
 from oop.mammal.platypus import Platypus
 

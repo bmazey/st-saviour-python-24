@@ -1,4 +1,4 @@
-from oop.animal import Animal
+from oop.mammal.animal import Animal
 
 class Mammal(Animal):
     """a class which defines all Mammals"""
