@@ -70,3 +70,6 @@ if __name__ == '__main__':
     numbers = [1, 5, 6, 7, -8]
     result = find_negative(numbers)
     print('result: ' + str(result))
+
+
+    # "this" means self
