@@ -8,4 +8,5 @@ def test_lyrics():
     assert last_chrismas.play() == 'This song is called Last Christmas. This song plays at 60 bpm with vocals'
 
 def test_instrumental():
-    cello_song = Instrumental
+    cello_song = Instrumental('Cello Song', 80, ['saxophone, percussion, guitar'], 'cello', False )
+    assert cello_song.beats() == 'artist sings Cello Song which has no lyrics but plays a cello as a leading instrument'

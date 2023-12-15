@@ -9,5 +9,4 @@ class Instrumental(Music):
         self.has_lyrics = False
 
     def beats(self):
-        return 'the song ' + self.title + ' has a bpm of ' + self.bpm + 
-    
+        return 'artist sings ' + self.title + ' which has no lyrics but plays a ' + self.leading_instrument + ' as a leading instrument'
