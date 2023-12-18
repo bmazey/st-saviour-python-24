@@ -9,4 +9,4 @@ class Beats(Music):
         super().__init__(title, bpm, instruments, False)
 
     def sing(self) -> str:
-        return 'it is  ' + str(self.no_lyrics) + ' that the song ' + self.title + ' has lyrics'
+        return 'it is ' + str(self.no_lyrics) + ' that the song ' + self.title + ' has lyrics'
