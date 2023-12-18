@@ -1,5 +1,5 @@
 class VideoGames:
-    def__init__(self, title: str, multiplayer: bool):
+    def __init__(self, title: str, multiplayer: bool):
         self.title = title
         self.multiplayer = multiplayer
     
