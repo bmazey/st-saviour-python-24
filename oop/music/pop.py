@@ -9,4 +9,4 @@ class Pop(Lyrics):
         self.memorable_lyrics = memorable_lyrics
 
     def belt(self) -> str:
-        return 'it is ' + self.cachy + ' the song ' + self.title + ' has the cachy lyrics: ' + self.memorable_lyrics
+        return 'the song ' + self.title + ' has the cachy lyrics: ' + self.memorable_lyrics
