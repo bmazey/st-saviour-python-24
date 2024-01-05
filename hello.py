@@ -1,4 +1,5 @@
 from structures.lists import find_negative
+from oop.music.techno import Techno
 
 if __name__ == '__main__':
     # this file is provided for experimentation purposes
@@ -67,6 +68,10 @@ if __name__ == '__main__':
     # else:
     #     print('x is NOT equal (==) to z')
 
-    numbers = [1, 5, 6, 7, -8]
-    result = find_negative(numbers)
-    print('result: ' + str(result))
+    # numbers = [1, 5, 6, 7, -8]
+    # result = find_negative(numbers)
+    # print('result: ' + str(result))
+
+    rave = Techno('Technologic', 127, ['turntables'], False, True, 'electric piano')
+
+    print('rave: ' + str(rave))
