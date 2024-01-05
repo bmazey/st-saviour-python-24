@@ -1,3 +1,4 @@
+from oop.music.music import Music
 from oop.music.lyric_songs import Lyrics
 from oop.music.beats import Beats
 
