@@ -16,7 +16,7 @@ def test_new_borderlands():
 
     # assert properties of a skag
     assert isinstance(skag, Borderlands)
-    assert skag.name == 'Meatface'
+    assert skag.name == 'Skag'
 
     # assert properties of all skags in the arena
     for enemy in enemy.arena:

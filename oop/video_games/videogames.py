@@ -7,6 +7,9 @@ class VideoGames:
         self.multiplayer = multiplayer
     
     def play(self, player_name: str, session: int):
+        # states the amount of time a player plays the game
         self.player_name = player_name
+        # gives the player a username
         session = ''
         player_name + "has played" + self.title + "for" + session 
+        # gives back the player name, the game title and the time that the game was beign played
