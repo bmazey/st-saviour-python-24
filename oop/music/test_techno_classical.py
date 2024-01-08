@@ -15,10 +15,10 @@ def test_techno():
     assert isinstance(rave, Techno)
 
 def test_classical():
-    listen = Classical('Avengers', 120, ['piano'], False, True, 'trumpet')
+    listen = Classical('Avengers', 120, ['piano'], False, True, 'clarinet')
     assert listen.sing() == 'it is False that the song Avengers has lyrics'
     assert listen.play() == 'Avengers is a song that plays at 120 beats per minute with piano'
-    assert listen.conduct() == 'the song Avengers has the woodwind instrument: trumpet'
+    assert listen.conduct() == 'the song Avengers has the woodwind instrument: clarinet'
 
     assert listen.bpm == 120
     assert isinstance(listen, Music)
