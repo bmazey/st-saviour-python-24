@@ -1,6 +1,6 @@
 from oop.music.beats import Beats
 
-class classical(Beats):
+class Classical(Beats):
     def __init__(self, title: str, bpm: int, instruments: [], no_lyrics: bool, brass: bool, brass_instrument: str):
         super().__init__(title, bpm, instruments, no_lyrics)
         self.brass = brass

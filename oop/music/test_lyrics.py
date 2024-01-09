@@ -16,5 +16,3 @@ def test_beats():
     assert listen.listen == ''
 
     assert isinstance(listen, Music)
-
-
