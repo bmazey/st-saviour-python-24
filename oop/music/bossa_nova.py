@@ -10,4 +10,4 @@ class Bossa_Nova(Lyrical):
         leading_instrument = 'acoustic guitar'
 
     def gilberto(self):
-        return self.title
+        return self.title + ' is a bossa nova song because of its ' + self.leading_instrument + ' and lyrics'
