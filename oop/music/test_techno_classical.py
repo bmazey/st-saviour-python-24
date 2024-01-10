@@ -4,15 +4,16 @@ from oop.music.techno import Techno
 from oop.music.classical import Classical
 
 def test_techno():
-    rave = Techno('Technologic', 127, ['turntables'], False, True, 'electric piano')
+    rave = Techno('Technologic', 127, ['turntables'], False, 'electric piano')
     assert rave.sing() == 'it is False that the song Technologic has lyrics'
     assert rave.play() == 'Technologic is a song that plays at 127 beats per minute with turntables'
-    assert rave.produce() == 'the song Technologic creates futuristic themes by using the electric piano'
-
+    assert str(rave) == 'title: Technologic bpm: 127 instruments: [\'turntables\'] no lyrics: False synthesizers: electric piano'
     assert rave.bpm == 127
     assert isinstance(rave, Music)
     assert isinstance(rave, Beats)
     assert isinstance(rave, Techno)
+
+    assert rave.futuristic_themes
 
 def test_classical():
     listen = Classical('Avengers', 120, ['piano'], False, True, 'clarinet')

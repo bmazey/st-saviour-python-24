@@ -73,5 +73,5 @@ if __name__ == '__main__':
     # print('result: ' + str(result))
 
     rave = Techno('Technologic', 127, ['turntables'], False, True, 'electric piano')
-
+    
     print('rave: ' + str(rave))
