@@ -4,9 +4,9 @@ from oop.music.beats import Beats
 
 
 def test_lyrics():
-    listen = Lyrics('rip', 80, ['bass'],'Rest in peace, you and me', True)
-    assert listen.play == 'rip is a song that plays at 80 beats per minute with bass'
-    assert listen.listen == 'the song rip has the lyrics Rest in peace, you and me'
+    listen = Lyrics('Rip', 80, ['bass'], 'Rest in peace, you and me', True)
+    assert listen.play == 'Rip is a song that plays at 80 beats per minute with bass'
+    assert listen.listen == 'the song Rip has the lyrics Rest in peace, you and me'
 
     assert isinstance(listen, Music)
 

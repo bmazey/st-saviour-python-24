@@ -15,9 +15,9 @@ def test_indie():
 
 def test_synth():
     depeche_mode = Synth('Strangelove', 117, ['synthesizers'], 'Strangelove, strange highs and strange lows', True)
-    assert depeche_mode.play == 'Strangelove is a song that plays at 117 beats per minute with synthesizers'
-    assert depeche_mode.listen == '' 
-    assert depeche_mode.electronic == ''
+    assert depeche_mode.play() == 'Strangelove is a song that plays at 117 beats per minute with synthesizers'
+    assert depeche_mode.listen() == 'the song Strangelove has the lyrics Strangelove, strange highs and strange lows' 
+    assert depeche_mode.electronic() == 'Strangelove having lyrics is True'
 
     assert isinstance (depeche_mode, Music)
     assert isinstance (depeche_mode, Lyrics)
