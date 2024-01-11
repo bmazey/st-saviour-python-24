@@ -1,6 +1,7 @@
 from oop.music.music import Music
 
 class Instrumental(Music):
+    """A class that defines instrumental music"""
 
     def __init__(self, title: str, bpm: int, instruments: [], leading_instrument: str, has_lyrics: bool):
         super().__init__(title, bpm, instruments, False)

@@ -1,6 +1,7 @@
 from oop.music.instrumental_song import Instrumental
 
 class Electro(Instrumental):
+    """A class that defines all music in the electro genre"""
 
     def __init__(self, title: str, bpm: int, instrument: [], leading_instrument: str, has_lyrics: bool):
         super().__init__(title, bpm, instrument, leading_instrument, has_lyrics)
