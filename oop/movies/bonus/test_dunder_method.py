@@ -1,7 +1,8 @@
-from oop.movies.bonus import Car
+import unittest
 
-car1 = Car("Toyota", "Camry", 2022)
-car2 = Car("Honda", "Accord", 2023)
+class TestMyClassStrMethod(unittest.TestCase):
+    def test_str_method(self):
+        self.assertEqual(str(object), "MyClass instance with value: 42")
 
-print(str(car1))
-print(str(car2))
+if __name__ == '_main_':
+    unittest.main()
