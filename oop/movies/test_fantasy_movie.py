@@ -2,8 +2,8 @@ from oop.movies.movie import Movie
 from oop.movies.fantasy_movie import FantasyMovie
 
 def test_movie_watch():
-    movie = Movie("", 2.0)
-    assert movie.watch() == "Watching Harry potter for 2.0 hours!"
+    movie = Movie("Harry Potter", 2.0)
+    assert movie.watch() == "Watching Harry Potter for 2.0 hours!"
 
 def test_fantasy_movie_watch():
     fantasy_movie = FantasyMovie("The Lord of the Rings", 3.5)

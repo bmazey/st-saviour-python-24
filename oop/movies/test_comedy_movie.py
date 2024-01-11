@@ -2,7 +2,7 @@ from oop.movies.movie import Movie
 from oop.movies.comedy_movie import ComedyMovie
 
 def test_movie_watch():
-    movie = Movie("Dumb and dumber", 2.0)
+    movie = Movie("Dumb and Dumber", 2.0)
     assert movie.watch() == "Watching Dumb and Dumber for 2.0 hours!"
 
 def test_comedy_movie_watch():
