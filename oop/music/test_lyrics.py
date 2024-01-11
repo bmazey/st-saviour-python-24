@@ -8,10 +8,13 @@ def test_lyrics():
     assert last_christmas.play() == 'This song is called Last Christmas. This song plays at 60 bpm with vocals'
 
     assert isinstance(last_christmas, Music)
+    assert isinstance(last_christmas, Lyrical)
 
 def test_instrumental():
     cello_song = Instrumental('Cello Song', 80, ['saxophone, percussion, guitar'], 'cello', False )
     assert cello_song.beats() == 'artist sings Cello Song which has no lyrics but plays a cello as a leading instrument'
     assert cello_song.play() == 'This song is called Cello Song. This song plays at 80 bpm with saxophone, percussion, guitar'
 
+
     assert isinstance(cello_song, Music)
+    assert isinstance(cello_song, Instrumental)

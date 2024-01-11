@@ -10,6 +10,7 @@ def test_electro():
 
     assert isinstance(daft_punk, Instrumental)
     assert isinstance(daft_punk, Music)
+    assert str(daft_punk) == 'title: Get Lucky bpm: 90 instruments: [\'synthetizer, percussion, piano\'] leading instrument: synthetizer'
 
    
 def test_bossa():

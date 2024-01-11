@@ -1,6 +1,6 @@
 
 class Music:
-    """A class that define music"""
+    """A class that defines music"""
 
     # defining that all music has a title, a bpm, and instruments
     # defining that all music has or does not have lyrics, which is a passed on boolean
@@ -11,7 +11,7 @@ class Music:
         self.instruments = instruments
         self.lyrical = lyrical
         
-    # play is an instance of music 
+    
     def play(self):
         play = 'This song is called ' + self.title + '. This song plays at ' + str(self.bpm) + ' bpm with '
         

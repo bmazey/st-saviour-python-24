@@ -12,6 +12,6 @@ class Lyrical(Music):
         self.has_lyrics = has_lyrics
         self.has_lyrics = True 
 
-    # Sing is an instance of Lyrical
+    
     def sing(self):
         return 'artist sings ' + self.title + ' with lyrics: ' + self.lyrics
