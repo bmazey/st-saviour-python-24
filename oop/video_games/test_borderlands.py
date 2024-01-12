@@ -1,7 +1,7 @@
 from oop.video_games.borderlands import Borderlands
 
 def test_new_borderlands():
-    borderlands2 = Borderlands('Borderands 2')
+    enemy = Borderlands('Borderands 2')
 
     # start by asserting empty arena
     assert enemy.empty_arena()

@@ -3,18 +3,17 @@ from oop.video_games.shooters import Shooters
 
 def test_shooters():
     borderlands = Shooters('Borderlands', True)
-    assert len(bl.gun) == 0
+    assert len(borderlands.guns) == 0
 
-    bl.add_gun('Lady Fist')
-    assert len(bl.gun) == 1
+    borderlands.add_guns('Lady Fist')
+    assert len(borderlands.guns) == 1
 
-    from oop.video_games.rhythm import Rhythm
 
 def test_new_rhythm():
     ddr = Rhythm('Dance Dance Revolution', True)
     assert len(ddr.tracks) == 0
 
-    ddr.add_track('Baby One More Time')
+    ddr.add_tracks('Baby One More Time')
     assert len(ddr.tracks) == 1
 
     assert ddr.title == 'Dance Dance Revolution'
@@ -22,5 +21,5 @@ def test_new_rhythm():
     guitar_hero = Rhythm('Guitar Hero', True)
     assert len(guitar_hero.tracks) == 0
 
-    guitar_hero.add_track('Paint it Black')
+    guitar_hero.add_tracks('Paint it Black')
     assert len(guitar_hero.tracks) == 1

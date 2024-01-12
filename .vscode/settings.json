@@ -1,7 +1,5 @@
 {
     "python.testing.pytestArgs": [
-        "fundamentals",
-        "structures",
         "oop"
     ],
     "python.testing.unittestEnabled": false,

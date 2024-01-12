@@ -1,8 +1,7 @@
-from oop.video_games import VideoGames
+from oop.video_games.videogames import VideoGames
 
 # creates the class: Rhythm
 class Rhythm(VideoGames):
-
     def __init__(self, title: str, multiplayer: bool):
          # calls back to the properties of a video game
         super().__init__(title, multiplayer)
