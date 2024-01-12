@@ -1,4 +1,5 @@
 from structures.lists import find_negative
+from oop.music.lyrics import Lyrics
 
 if __name__ == '__main__':
     # this file is provided for experimentation purposes
@@ -70,3 +71,7 @@ if __name__ == '__main__':
     numbers = [1, 5, 6, 7, -8]
     result = find_negative(numbers)
     print('result: ' + str(result))
+
+    listen = Lyrics('rip', 80, [], True)
+    play = listen.play()
+    assert play == 'it is True that rip has lyrics'  
