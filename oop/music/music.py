@@ -1,4 +1,5 @@
 class Music:
+    """ a class identifying Music """
     def __init__(self, title: str, bpm: int, instruments: [], lyrics: bool):
         self.title = title
         self.bpm = bpm

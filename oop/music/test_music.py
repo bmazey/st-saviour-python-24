@@ -1,6 +1,7 @@
 from oop.music.music import Music
 
 def test_music():
+    """ identifying music """
     instruments = ['kazoo']
     jam = Music('lent', 106, instruments, True)
     play = jam.play()
