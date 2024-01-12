@@ -10,6 +10,7 @@ def test_pop():
     assert dance.belt() == 'the song Believer has the cachy lyrics: Pain! You made me a, you made me a believer, believer'
 
     assert dance.bpm == 125
+    assert dance.has_lyrics == True
     assert isinstance(dance, Music)
     assert isinstance(dance, Lyrics)
     assert isinstance(dance, Pop)
@@ -21,6 +22,7 @@ def test_rock():
     assert mosh.rip() == 'the song T.N.T. screams the lyrics: T.N.T., Im a power load T.N.T., watch me explode'
 
     assert mosh.bpm == 123
+    assert mosh.has_lyrics == True
     assert isinstance(mosh, Music)
     assert isinstance(mosh, Lyrics)
     assert isinstance(mosh, Rock)

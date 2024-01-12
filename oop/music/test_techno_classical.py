@@ -8,7 +8,9 @@ def test_techno():
     assert rave.sing() == 'it is False that the song Technologic has lyrics'
     assert rave.play() == 'Technologic is a song that plays at 127 beats per minute with turntables'
     assert str(rave) == 'title: Technologic bpm: 127 instruments: [\'turntables\'] no lyrics: False synthesizers: electric piano'
+
     assert rave.bpm == 127
+    assert rave.no_lyrics == False
     assert isinstance(rave, Music)
     assert isinstance(rave, Beats)
     assert isinstance(rave, Techno)
@@ -22,6 +24,7 @@ def test_classical():
     assert listen.conduct() == 'the song Avengers has the woodwind instrument: clarinet'
 
     assert listen.bpm == 120
+    assert listen.no_lyrics == False
     assert isinstance(listen, Music)
     assert isinstance(listen, Beats)
     assert isinstance(listen, Classical)

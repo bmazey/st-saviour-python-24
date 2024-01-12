@@ -7,6 +7,7 @@ def test_lyrics():
     assert grooves.sing() == 'the song Here has the lyrics: I ask myself what am I doing here'
     assert grooves.play() == 'Here is a song that plays at 120 beats per minute with vocals'
 
+    assert grooves.has_lyrics == True
     assert isinstance(grooves, Music)
     
 def test_beats():
@@ -14,4 +15,5 @@ def test_beats():
     assert jams.sing() == 'it is False that the song snowman has lyrics'
     assert jams.play() == 'snowman is a song that plays at 105 beats per minute with woodwinds'
 
+    assert jams.no_lyrics == False
     assert isinstance(jams, Music)
