@@ -73,3 +73,38 @@ if __name__ == '__main__':
 
 
     # "this" means self
+
+
+#import unittest
+#class MyClass:
+    #def _init_(self,value):
+        #self.value = value
+
+    #def _str_(self):
+        #return f"MyClass instance with value: {self.value}"
+    
+    #def _repr_(self):
+        #return f"MyClass({self.value})"
+    
+    #def _add_(self, other):
+        #if isinstance(other, MyClass):
+            #return MyClass(self.value + other.value)
+        #else:
+            #raise TypeError("Unsupported operand type for +")
+    
+
+#import unittest
+
+#class MyClass:
+    #def _init_(self,value):
+        #self.value = value
+
+#class TestMyClassMethods(unittest.TestCase):
+    #def setUp(self):
+        #self.obj = MyClass(42)
+
+    #def test_str_method(self):
+        #self.assertEqual(str(self.obj), "MyClass instance with value: 42")
+    
+    #if __name__ == '_main_':
+        #unittest.main()
