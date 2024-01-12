@@ -2,6 +2,7 @@ from oop.movies.movie import Movie
 
 class ComedyMovie(Movie):
     """A class which defines all comedy movies."""
+    # All comedy movies have title and duration.Use float for duration
     def __init__(self, title: str, duration: float):
         super().__init__(title, duration)
 
