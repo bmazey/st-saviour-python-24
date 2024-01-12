@@ -1,9 +1,9 @@
 from oop.music.music import Music
 
 class Lyrics(Music):
-    """a new class that identifies that music has lyrics"""
+    """ a class that identifies Lyrics in Music """
     def __init__(self, title: str, bpm: int, instruments: [], lyrics: str, has_lyrics: bool):
-        super().__init__(title, bpm, instruments, lyrics, True)
+        super().__init__(title, bpm, instruments, True)
         self.lyrics = lyrics 
         self.has_lyrics = has_lyrics
 
@@ -11,4 +11,4 @@ class Lyrics(Music):
         self.has_lyrics = True
 
     def listen(self) -> str:
-        return 'the song ' + self.title + ' has the lyrics ' + self.lyrics
+        return 'The song ' + self.title + ' has the lyrics ' + self.lyrics

@@ -6,5 +6,5 @@ class Beats(Music):
         self.no_lyrics = no_lyrics 
         self.no_lryics = False
 
-def listen(self) -> str:
-    return 'it is' + str(self.no_lryics) + ' that the song ' + self.title + ' has lyrics'
+    def headbop(self) -> str:
+        return 'it is ' + str(self.no_lryics) + ' that the song ' + self.title + ' has lyrics'
