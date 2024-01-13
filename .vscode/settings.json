@@ -1,8 +1,8 @@
 {
     "python.testing.pytestArgs": [
-        "fundamentals",
-        "structures"
+        "oop"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "workbench.settings.editor": "ui"
 }
