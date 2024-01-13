@@ -1,8 +1,7 @@
 from oop.video_games.borderlands import Borderlands
 
 def test_new_borderlands():
-    enemy = Borderlands('Borderands 2')
-
+    enemy = Borderlands('Borderands 2', multiplayer = True)
     # start by asserting empty arena
     assert enemy.empty_arena()
 
@@ -20,7 +19,7 @@ def test_new_borderlands():
 
     # assert properties of all skags in the arena
     for enemy in enemy.arena:
-        assert enemy.gun
+        assert enemy.guns
         assert isinstance(enemy, Borderlands)
 
     # kill all enemies
