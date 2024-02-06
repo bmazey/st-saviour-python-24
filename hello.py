@@ -108,3 +108,9 @@ if __name__ == '__main__':
     
     #if __name__ == '_main_':
         #unittest.main()
+
+
+    @app.route('/image')
+    def serve_image():
+        "a simple HTTp image"
+        return render_template('image.html')
